@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Album from '../src/Page/AlbumPage/Album.jsx'
 import Home from '../src/Page/HomePage/home.jsx'
+import Tavbar from './Page/common/tavbar/Navbar.jsx'
 import { BrowserRouter , NavLink, Routes, Route, Navigate } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,9 +12,9 @@ root.render(
         {/* <Route path='/' element = {<Album/>}>
 
         </Route> */}
-        <Route path='/' element = {<Home/>}>
+        <Route path='/' element = {<Tavbar/>}>
 
-</Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
