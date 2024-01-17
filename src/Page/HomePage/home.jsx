@@ -1,6 +1,9 @@
+import './home.scss'
 function home() {
     return (
-      <a>HOME</a>
+      <div class = 'main'>
+        <a>đas</a>
+      </div>
     );
   }
   
