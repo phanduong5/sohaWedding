@@ -1,63 +1,78 @@
 import React, { useState } from "react";
 import "./navbar.scss";
+import { Link } from 'react-router-dom';
+import { Typography } from '@mui/material';
 
 function Navbar() {
-  const [active, setActive] = useState("nav__menu");
-  const [icon, setIcon] = useState("nav__toggler");
-  const navToggle = () => {
-    if (active === "nav__menu") {
-      setActive("nav__menu nav__active");
-    } else setActive("nav__menu");
-
-    // Icon Toggler
-    if (icon === "nav__toggler") {
-      setIcon("nav__toggler toggle");
-    } else setIcon("nav__toggler");
-  };
   return (
-    <nav className="nav">
-      <a href="#" className="nav__brand">
-        Soha Wedding
-      </a>
-      <ul className={active}>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Trang Chủ
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Giới Thiệu
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Dịch vụ
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Album
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Báo giá
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Liên Hệ
-          </a>
-        </li>
-      </ul>
-      <div onClick={navToggle} className={icon}>
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
+    <div className="nav_container">
+      <div className="nav_left">
+        <ul className="nav_menu">
+          <li>
+            <a>
+            <Typography style={{ fontFamily: 'Roboto', fontSize: '18px' }}>
+              <Link to="/Home" className="no-underline">Trang chủ</Link>
+            </Typography>
+            </a>
+          </li>
+          <li>
+            <a>
+            <Typography style={{ fontFamily: 'Roboto', fontSize: '18px' }}>
+              <Link to="/Introduce" className="no-underline">Giới Thiệu</Link>
+            </Typography>
+            </a>
+          </li>
+          <li>
+            <a>
+            <Typography style={{ fontFamily: 'Roboto', fontSize: '18px' }}>
+              <Link to="/Service" className="no-underline">Dịch Vụ</Link>
+            </Typography>
+            </a>
+          </li>
+          <li>
+            <a>
+            <Typography style={{ fontFamily: 'Roboto', fontSize: '18px' }}>
+              <Link to="/Album" className="no-underline">Album</Link>
+            </Typography>
+            </a>
+          </li>
+          <li>
+            <a>
+            <Typography style={{ fontFamily: 'Roboto', fontSize: '18px' }}>
+              <Link to="/Price" className="no-underline">Báo Giá</Link>
+            </Typography>
+            </a>
+          </li>
+          <li>
+            <a>
+            <Typography style={{ fontFamily: 'Roboto', fontSize: '18px' }}>
+              <Link to="/Endow" className="no-underline">Ưu Đãi</Link>
+            </Typography>
+            </a>
+          </li>
+          <li>
+            <a>
+            <Typography style={{ fontFamily: 'Roboto', fontSize: '18px' }}>
+              <Link to="/News" className="no-underline">Tin Tức</Link>
+            </Typography>
+            </a>
+          </li>
+          <li>
+            <a>
+            <Typography style={{ fontFamily: 'Roboto', fontSize: '18px' }}>
+              <Link to="/Contact" className="no-underline">Liên Hệ</Link>
+            </Typography>
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  );
+      <a className="nav_right">
+        <Typography style={{ fontFamily: 'Roboto', fontSize: '18px' }}>
+          GET QUOTE
+        </Typography>
+      </a>
+    </div>
+  )
 }
 
 export default Navbar;

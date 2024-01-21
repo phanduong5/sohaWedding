@@ -1,0 +1,25 @@
+.head_logo_shop_img{
+    height: 150px;
+    width: 150px;
+    margin: 20px 0 0 100px;
+}
+.head_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 30px;
+}
+.head_information_shop_cell{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 20px;
+}
+.information_cell{
+    display: flex;
+
+}
+.icon_head{
+    color: rgb(255, 193, 252);
+    margin-right: -30px;
+}
