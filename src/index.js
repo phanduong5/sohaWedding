@@ -5,6 +5,8 @@ import Home from '../src/Page/HomePage/home.jsx'
 import Tavbar from './Page/common/tavbar/Navbar.jsx'
 import Backgroud from './Page/common/backgroud/Backgroud.jsx'
 import Head from './Page/common/head/head.jsx'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Page/common/footer/Footer.jsx'
 
 import { BrowserRouter , NavLink, Routes, Route, Navigate } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,7 +17,7 @@ root.render(
         {/* <Route path='/' element = {<Album/>}>
 
         </Route> */}
-        <Route path='/' element = {<Tavbar/>}>
+        <Route path='/' element = {<Footer/>}>
 
         </Route>
       </Routes>
