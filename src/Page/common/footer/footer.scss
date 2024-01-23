@@ -4,7 +4,7 @@
 .container {
     .HeadTitle{
         font-family:serif;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bolder;
         margin-bottom: 25px;
     }
@@ -21,4 +21,15 @@
 }
 .container li {
     margin-bottom: 10px;
+}
+.footerIcon{
+    color: rgb(255, 167, 95);
+}
+.col-sm-11{
+    padding: 3px 20px;
+}
+.ImageFooter
+{
+    width: 100px;
+    height: auto;
 }
