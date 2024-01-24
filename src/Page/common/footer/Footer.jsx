@@ -8,8 +8,9 @@ import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import logo from '../../assets/img/logo.jpg'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import SendIcon from '@mui/icons-material/Send';
 const Footer = () => {
-    const PageFacebook = () =>{
+    const PageFacebook = () => {
         window.location.href = "https://www.facebook.com/SOHAwedding.nv?locale=vi_VN";
     }
     return (
@@ -19,16 +20,25 @@ const Footer = () => {
                     <div>
                         <img className="ImageFooter" src={logo} ></img>
                     </div>
-                    <div className="row">
-                        <div className="col-sm-2" onClick={PageFacebook}>
-                            <FacebookIcon/>
+                    <div className="iconPublic">
+                        <div onClick={PageFacebook}>
+                            <FacebookIcon className="footerIcon" />
                         </div>
-                        <div className="col-sm-2">
-                            <YouTubeIcon/>
+                        <div>
+                            <YouTubeIcon className="footerIcon" />
                         </div>
                         <div className="col-sm-8">
                             <i class="fab fa-tiktok"></i>
                         </div>
+                    </div>
+                    <div className="titleFooter">
+                        <span>HAY ĐỂ SỐ ĐIỆN THOẠI ĐỂ TƯ VẤN</span>
+                    </div>
+                    <div className="inputFooter">
+                        <div className="input">
+                            <input className="inputCell" placeholder="Số Điện Thoại"></input>
+                        </div>
+                        <div><SendIcon className="footerIcon" /></div>
                     </div>
                 </div>
                 <div className="col-sm-6 col-lg-3 text-start">
@@ -127,11 +137,11 @@ const Footer = () => {
                             </p>
                         </li>
                         <li>
-                            <div className="row">
-                                <div className="col-sm-1">
-                                    <FmdGoodIcon className="footerIcon"/>
+                            <div className="ContactFooter">
+                                <div>
+                                    <FmdGoodIcon className="footerIcon" />
                                 </div>
-                                <div className="col-sm-11">
+                                <div>
                                     <a>
                                         <Typography style={{ fontFamily: 'Roboto', fontSize: '15px' }}>
                                             Địa Chỉ: 199 giáp nhất,
@@ -141,11 +151,11 @@ const Footer = () => {
                             </div>
                         </li>
                         <li>
-                            <div className="row">
-                                <div className="col-sm-1">
+                            <div className="ContactFooter">
+                                <div>
                                     <AccessTimeIcon className="footerIcon" />
                                 </div>
-                                <div className="col-sm-11">
+                                <div>
                                     <a>
                                         <Typography style={{ fontFamily: 'Roboto', fontSize: '15px' }}>
                                             Giờ mở cửa: 9:30 - 21:00
@@ -155,11 +165,11 @@ const Footer = () => {
                             </div>
                         </li>
                         <li>
-                            <div className="row">
-                                <div className="col-sm-1">
-                                    <CallIcon className="footerIcon"/>
+                            <div className="ContactFooter">
+                                <div>
+                                    <CallIcon className="footerIcon" />
                                 </div>
-                                <div className="col-sm-11">
+                                <div>
                                     <a>
                                         <Typography style={{ fontFamily: 'Roboto', fontSize: '15px' }}>
                                             Hotline: 0387491892
@@ -169,11 +179,11 @@ const Footer = () => {
                             </div>
                         </li>
                         <li>
-                            <div className="row">
-                                <div className="col-sm-1">
-                                    <CallIcon className="footerIcon"/>
+                            <div className="ContactFooter">
+                                <div>
+                                    <CallIcon className="footerIcon" />
                                 </div>
-                                <div className="col-sm-11">
+                                <div>
                                     <a>
                                         <Typography style={{ fontFamily: 'Roboto', fontSize: '15px' }}>
                                             CSKH: 0837491892
