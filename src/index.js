@@ -17,7 +17,7 @@ root.render(
         {/* <Route path='/' element = {<Album/>}>
 
         </Route> */}
-        <Route path='/' element = {<Footer/>}>
+        <Route path='/' element = {<Home/>}>
 
         </Route>
       </Routes>

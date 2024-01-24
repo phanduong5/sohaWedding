@@ -14,7 +14,7 @@ const Backgroud = ({ listImg }) => {
     
     return (
       <div className="container">
-        <img className="backgroud" src={listImg[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
+        <img className="action" src={listImg[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
       </div>
     );
   };

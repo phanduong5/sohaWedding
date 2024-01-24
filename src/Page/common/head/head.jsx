@@ -5,6 +5,9 @@ import logo from '../../assets/img/logo.jpg'
 import MailIcon from '@mui/icons-material/Mail';
 import CallIcon from '@mui/icons-material/Call';
 import { Typography } from '@mui/material';
+import Nav from '../tavbar/Navbar.jsx';
+import Home from '../../HomePage/home.jsx';
+
 const head = () => {
     return (
         <nav className="head_container">

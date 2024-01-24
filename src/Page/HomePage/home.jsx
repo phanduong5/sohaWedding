@@ -1,9 +1,12 @@
 import './home.scss'
 import React from 'react';
-import anh1 from '../assets/img/anh1.jpg'
-import anh2 from '../assets/img/anh2.jpg'
-import anh3 from '../assets/img/anh3.jpg'
+import anh1 from '../assets/img/anhchayHome/anhchay1.jpg'
+import anh2 from '../assets/img/anhchayHome/anhchay2.jpg'
+import anh3 from '../assets/img/anhchayHome/anhchay3.jpg'
 import Backgroud from '../common/backgroud/Backgroud';
+import Head from '../common/head/head.jsx'
+import Tavbar from '../common/tavbar/Navbar.jsx'
+import Footer from '../common/footer/Footer.jsx'
 function home() {
   const listImg =[
     anh1,
@@ -11,10 +14,13 @@ function home() {
     anh3,
       ]; 
     return (
-      <div class = 'main'>
-       <Backgroud listImg = {listImg} ></Backgroud>
-      </div>
-    );
+     <>
+     <Head/>
+     <Tavbar/>
+     <Backgroud listImg={listImg}/>
+      <Footer/>
+     </>  
+    )
   }
   
   export default home;

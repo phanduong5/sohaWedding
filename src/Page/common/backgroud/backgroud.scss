@@ -1,6 +1,11 @@
-.backgroud{
- background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
- position: relative;
+.container{
+    position: relative;
+}
+.container img{
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+.container img.action{
+    opacity: 1;
 }
