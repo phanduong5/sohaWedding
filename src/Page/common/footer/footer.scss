@@ -24,12 +24,40 @@
 }
 .footerIcon{
     color: rgb(255, 167, 95);
-}
-.col-sm-11{
-    padding: 3px 20px;
+    margin-right: 10px;
 }
 .ImageFooter
 {
     width: 100px;
     height: auto;
+}
+.ContactFooter{
+    display: flex;
+    align-items: center;
+}
+.inputFooter{
+    display: flex;
+    margin-top: 10px;
+    .footerIcon{
+        cursor: pointer;
+    }
+}
+.input{
+    margin-right: 10px;
+    .inputCell{
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        border-style: outset;
+        box-shadow: 2px 2xp 5px rgba(134, 134, 134, 1.0);
+    }
+}
+.titleFooter{
+    margin-top: 20px;
+    span{
+        font-size: 15px;
+    }
+}
+.iconPublic{
+    display: flex;
+    cursor: pointer;
 }
