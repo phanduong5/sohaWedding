@@ -1,11 +1,20 @@
-.container{
+@keyframes moveImg {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container_imgRun {
     position: relative;
 }
-.container img{
+
+.container_imgRun .imgRun {
     max-width: 100%;
     height: auto;
-    transition: opacity 0.5s ease-in-out;
-}
-.container img.action{
-    opacity: 1;
+    animation-name: moveImg;
+    animation-duration: 3s;
 }
