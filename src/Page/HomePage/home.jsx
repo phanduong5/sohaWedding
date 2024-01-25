@@ -8,19 +8,19 @@ import Head from '../common/head/head.jsx'
 import Tavbar from '../common/tavbar/Navbar.jsx'
 import Footer from '../common/footer/Footer.jsx'
 function home() {
-  const listImg =[
+  const listImg = [
     anh1,
     anh2,
     anh3,
-      ]; 
-    return (
-     <>
-     <Head/>
-     <Tavbar/>
-     <Backgroud listImg={listImg}/>
-      <Footer/>
-     </>  
-    )
-  }
-  
-  export default home;
+  ];
+  return (
+    <>
+      {/* <Head/>
+     <Tavbar/> */}
+      <Backgroud listImg={listImg} />
+      {/* <Footer/> */}
+    </>
+  )
+}
+
+export default home;

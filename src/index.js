@@ -7,6 +7,9 @@ import Backgroud from './Page/common/backgroud/Backgroud.jsx'
 import Head from './Page/common/head/head.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Page/common/footer/Footer.jsx'
+import CommonContact from './Page/common/commonContext/CommonContext.jsx'
+import CommonService from './Page/common/commonService/CommonService.jsx'
+
 
 import { BrowserRouter , NavLink, Routes, Route, Navigate } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
