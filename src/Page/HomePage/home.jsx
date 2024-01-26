@@ -7,6 +7,7 @@ import Backgroud from '../common/backgroud/Backgroud';
 import Head from '../common/head/head.jsx'
 import Tavbar from '../common/tavbar/Navbar.jsx'
 import Footer from '../common/footer/Footer.jsx'
+import CommonImg from '../common/CommonImage/CommonImage.jsx'
 function home() {
   const listImg = [
     anh1,
@@ -17,8 +18,9 @@ function home() {
     <>
       {/* <Head/>
      <Tavbar/> */}
-      <Backgroud listImg={listImg} />
+      {/* <Backgroud listImg={listImg} /> */}
       {/* <Footer/> */}
+      <CommonImg />
     </>
   )
 }
