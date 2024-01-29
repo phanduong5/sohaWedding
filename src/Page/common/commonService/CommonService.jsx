@@ -1,4 +1,4 @@
-import CommonCard from '../CommonImage/CommonImage'
+import CommonCard from '../commonService/CommonImage/CommonImage.jsx'
 import Cinemactor from '../../assets/img/chupanhCuoi/chupanhcuoi3.jpg'
 import WeddingDress from '../../assets/img/choThue Vay/chothuevaycuoi3.jpg'
 import WeddingDayPhotography from '../../assets/img/chụpphongsu/chupanhphongsucuoi1.jpg'
@@ -13,7 +13,7 @@ const CommonService = () => {
                 <div className='title_commonService'>
                     <h3>TẠI JEJU WEDDING, BẠN HOÀN TOÀN YÊN TÂM VỚI CÁC DỊCH VỤ CƯỚI</h3>
                     <span>
-                    JEJU WEDDING hiện có 2 chi nhánh tại Hà Nội được trang bị đầy đủ cơ sở vật chất và trang thiết bị hiện đại, showroom váy cưới với diện tích lên tới 500m2 thoả sức cho các cặp đôi lựa chọn những mẫu váy cưới được thiết kế riêng HOT TREND nhất thị trường, cùng studio chụp ảnh cưới được trang trí đa dạng concept, độc quyền cho cặp đôi của JEJU tại Hà Nội.
+                        JEJU WEDDING hiện có 2 chi nhánh tại Hà Nội được trang bị đầy đủ cơ sở vật chất và trang thiết bị hiện đại, showroom váy cưới với diện tích lên tới 500m2 thoả sức cho các cặp đôi lựa chọn những mẫu váy cưới được thiết kế riêng HOT TREND nhất thị trường, cùng studio chụp ảnh cưới được trang trí đa dạng concept, độc quyền cho cặp đôi của JEJU tại Hà Nội.
                     </span>
                 </div>
                 <div>
@@ -52,7 +52,7 @@ const CommonService = () => {
                             <CommonCard
                                 image={CardWedding}
                                 text={"In THIỆP CƯỚI"}
-                            />   
+                            />
                         </div>
                     </div>
                 </div>
