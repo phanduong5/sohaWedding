@@ -1,6 +1,6 @@
 const CommonStylePhoto = () => {
     return (
-        <div className=" container">
+        <div className="container">
             <div className="title_commonStylePhoto">
                 <h3>
                     ALBUM ẢNH CƯỚI

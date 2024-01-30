@@ -1,12 +1,11 @@
-import Picture from '../../../assets/img/anh1.jpg'
 import './commonCardPhoto.scss'
 const CommonCardPhoto = ({ img, text }) => {
     return (
         <div className="container_card">
             <div className='container_img'>
-                <img src={Picture} />
+                <img src={img} />
                 <span>
-                    Chụp ảnh quảng trường
+                        {text}
                 </span>
             </div>
         </div>
