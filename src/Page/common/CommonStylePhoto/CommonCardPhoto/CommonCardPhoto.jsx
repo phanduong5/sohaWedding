@@ -1,9 +1,9 @@
 import './commonCardPhoto.scss'
-const CommonCardPhoto = ({ img, text }) => {
+const CommonCardPhoto = ({ image, text }) => {
     return (
         <div className="container_card">
             <div className='container_img'>
-                <img src={img} />
+                <img src={image} />
                 <span>
                         {text}
                 </span>
