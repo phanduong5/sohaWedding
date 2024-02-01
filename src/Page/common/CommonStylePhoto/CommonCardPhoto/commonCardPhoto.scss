@@ -12,9 +12,17 @@
         }
 
         span {
+            width: 100%;
+            background-color: #0000006B;
             position: absolute;
             bottom: 0;
             z-index: 2;
+            font-size: 20px;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 0px 10px 0px ;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,;
         }
     }
 }

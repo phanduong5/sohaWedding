@@ -9,8 +9,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Page/common/footer/Footer.jsx'
 import CommonContact from './Page/common/commonContext/CommonContext.jsx'
 import CommonService from './Page/common/commonService/CommonService.jsx'
-import CommonStylePhoto from './Page/common/CommonStylePhoto/CommonCardPhoto/CommonCardPhoto.jsx'
-
+import CommonStylePhoto from './Page/common/CommonStylePhoto/CommonStylePhoto.jsx'
+import CommonSendData from './Page/common/SendData/SendData.jsx'
 import { BrowserRouter , NavLink, Routes, Route, Navigate } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,7 +20,7 @@ root.render(
         {/* <Route path='/' element = {<Album/>}>
 
         </Route> */}
-        <Route path='/' element = {<CommonStylePhoto/>}>
+        <Route path='/' element = {<CommonSendData/>}>
 
         </Route>
       </Routes>
