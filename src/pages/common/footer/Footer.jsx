@@ -5,10 +5,11 @@ import './footer.scss'
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import CallIcon from '@mui/icons-material/Call';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
-import logo from '../../assets/img/logo.jpg'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import SendIcon from '@mui/icons-material/Send';
+import ImageLogo from "../../../assets/img/logo.jpg"
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Footer = () => {
     const PageFacebook = () => {
         window.location.href = "https://www.facebook.com/SOHAwedding.nv?locale=vi_VN";
@@ -18,7 +19,7 @@ const Footer = () => {
             <div className="row ">
                 <div className="col-sm-12 col-lg-3" >
                     <div>
-                        <img className="ImageFooter" src={logo} ></img>
+                        <img className="ImageFooter" src={ImageLogo} ></img>
                     </div>
                     <div className="iconPublic">
                         <div onClick={PageFacebook}>
