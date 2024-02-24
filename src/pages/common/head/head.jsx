@@ -1,18 +1,16 @@
 import React from "react";
 import "./head.scss";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
-import logo from "../../assets/img/logo.jpg";
+import Imagelogo from "../../../assets/img/logo.jpg";
 import MailIcon from "@mui/icons-material/Mail";
 import CallIcon from "@mui/icons-material/Call";
 import { Typography } from "@mui/material";
-import Nav from "../tavbar/Navbar.jsx";
-import Home from "../../HomePage/Home.jsx";
 
 const head = () => {
   return (
     <nav className="head_container">
       <div>
-        <img className="head_logo_shop_img" src={logo}></img>
+        <img className="head_logo_shop_img" src={Imagelogo}></img>
       </div>
       <ul className="head_information_shop_cell">
         <li className="information_cell">

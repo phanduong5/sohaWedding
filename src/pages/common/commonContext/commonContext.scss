@@ -1,10 +1,13 @@
-.container {
+.container_commonContact {
+    //background-color: #fcdede;
+    width: auto;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     .img_commonConact {
-        height: 100px;
+        height: 200px;
         width: auto;
     }
-}
-
-.container_commonContact {
-    background-color: #fcdede;
 }

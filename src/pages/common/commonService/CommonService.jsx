@@ -1,10 +1,10 @@
 import CommonCard from '../commonService/CommonImage/CommonImage.jsx'
-import Cinemactor from '../../assets/img/chupanhCuoi/chupanhcuoi3.jpg'
-import WeddingDress from '../../assets/img/choThue Vay/chothuevaycuoi3.jpg'
-import WeddingDayPhotography from '../../assets/img/chụpphongsu/chupanhphongsucuoi1.jpg'
-import makeUpBride from '../../assets/img/makeup/make_up2.jpg'
-import VocationalTraining from '../../assets/img/daotaonghe/daotaongh2.jpg'
-import CardWedding from '../../assets/img/thiepcuoi/thiepcuoi1.jpg'
+import Cinemactor from '../../../assets/img/chupanhCuoi/chupanhcuoi3.jpg'
+import WeddingDress from '../../../assets/img/choThue Vay/chothuevaycuoi3.jpg'
+import WeddingDayPhotography from '../../../assets/img/chụpphongsu/chupanhphongsucuoi1.jpg'
+import makeUpBride from '../../../assets/img/makeup/make_up2.jpg'
+import VocationalTraining from '../../../assets/img/daotaonghe/daotaongh2.jpg'
+import CardWedding from '../../../assets/img/thiepcuoi/thiepcuoi1.jpg'
 import './commonService.scss'
 const CommonService = () => {
     return (
