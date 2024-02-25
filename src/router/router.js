@@ -13,9 +13,6 @@ import Price from "../pages/price/Price";
 import Service from "../pages/service/Service";
 import NotFound from "../pages/not-found/NotFound";
 import Header from "../pages/common/header/Header";
-
-export const domainApp = "http://localhost:3000";
-import Header from "../pages/common/header/Header";
 import Layout from "../Layout";
 
 export const domainApp = "http://localhost:3000";
@@ -65,13 +62,5 @@ export const router = createBrowserRouter([
         element: <Navigate to={<Home />} />,
       },
     ],
-  },
-  {
-    path: "header",
-    element: <Header />,
-  },
-  {
-    path: "header",
-    element: <Header />,
   },
 ]);
