@@ -9,7 +9,9 @@ import "./App.scss";
 const App = () => {
   return (
     <div id="app">
+      <Header />
       <RouterProvider router={router} />
+      {/* <Footer /> */}
     </div>
   );
 };

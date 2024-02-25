@@ -7,9 +7,9 @@ import {
   faPhoneAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import "./header.scss";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ location }) => {
   const boxContent = [
     {
       icon: faLocationDot,
@@ -112,7 +112,7 @@ const Header = () => {
     },
   ];
 
-  const location = useLocation();
+  //   const navigate = useNavigate();
   return (
     <div id="header" className="header">
       <div className="header-top">
@@ -139,14 +139,14 @@ const Header = () => {
           <ul className="header-bottom-menu-ul">
             {menu.map((menuItem, indexItem) => (
               <li key={indexItem} className="header-bottom-menu-item">
-                <Link
+                <a
                   className={`header-bottom-menu-item-link ${
-                    menuItem.router === location.pathname ? "active" : ""
+                    menuItem === "" ? "active" : ""
                   }`}
-                  to={menuItem.router}
+                  href="/"
                 >
                   {menuItem.element}
-                </Link>
+                </a>
                 <ul className="menu-child">
                   {menuItem.children && menuItem.children.length
                     ? menuItem.children.map((item, index) => (

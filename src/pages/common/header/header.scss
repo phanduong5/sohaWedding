@@ -63,12 +63,12 @@
             content: "";
             position: absolute;
             width: 100%;
-            height: 2px;
+            height: 1px;
             left: 0;
             bottom: 0;
           }
           &:hover::after,
-          &.active::after {
+          &.active {
             background-color: #ffffff;
           }
           & ~ .menu-child {
@@ -82,7 +82,6 @@
             background-color: #fff;
             font-size: 13px;
             display: none;
-            z-index: 9999;
             li:not(:last-child) {
               border-bottom: 1px solid #fcdede;
             }
