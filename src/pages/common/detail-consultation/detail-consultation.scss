@@ -1,0 +1,30 @@
+.detail-consultation {
+  max-width: 450px;
+  background-color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  padding: 30px;
+  .custom-input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #e2e8f0;
+    border-radius: 0;
+    padding-left: 4px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .custom-button {
+    background-color: #fcdede !important;
+    color: #000000;
+    text-transform: uppercase;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .ant-form-item-control-input-content {
+    text-align: center;
+  }
+}

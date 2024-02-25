@@ -12,6 +12,9 @@ import News from "../pages/news/News";
 import Price from "../pages/price/Price";
 import Service from "../pages/service/Service";
 import NotFound from "../pages/not-found/NotFound";
+import Header from "../pages/common/header/Header";
+
+export const domainApp = "http://localhost:3000";
 
 export const router = createBrowserRouter([
   {
@@ -53,5 +56,9 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Navigate to={<Home />} />,
+  },
+  {
+    path: "header",
+    element: <Header />,
   },
 ]);
