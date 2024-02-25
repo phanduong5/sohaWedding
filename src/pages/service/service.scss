@@ -1,0 +1,174 @@
+.service {
+  .elementor-container {
+    max-width: 1200px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  &-bg {
+    background-color: #faf8f7;
+    background-image: url("../../assets/img/service/adad.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 100px 0 200px 0;
+    position: relative;
+    background-attachment: fixed;
+  }
+  .elementor-column {
+    width: 40%;
+  }
+  .elementor-shape {
+    transform: rotate(180deg);
+    z-index: 2;
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+
+    line-height: 0;
+    direction: ltr;
+    bottom: -5px;
+    .elementor-shape-fill {
+      fill: #fff;
+      transform-origin: center;
+      transform: rotateY(0deg);
+    }
+  }
+  .elementor-shape-bottom {
+    z-index: 2;
+    pointer-events: none;
+  }
+  .elementor-widget-container {
+    margin-bottom: 20px;
+  }
+  .elementor-heading-title {
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: "Arsenal", Sans-serif;
+    &.span {
+      font-weight: 400;
+      font-style: italic;
+      font-size: 18px;
+    }
+  }
+  .elementor-widget:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  h6.elementor-heading-title {
+    font-size: 16px;
+  }
+  h1.elementor-heading-title {
+    font-weight: 300;
+    line-height: 1.4em;
+    font-size: 38px;
+  }
+  h3.elementor-heading-title {
+    font-size: 30px;
+  }
+  h4.elementor-heading-title {
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  h2.elementor-heading-title {
+    line-height: 1.3em;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .elementor-button-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    fill: #000000;
+    color: #000000;
+    background-color: #fcdede;
+    border-radius: 0px 0px 0px 0px;
+    padding: 12px 24px;
+    font-family: "Arsenal", Sans-serif;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-section-2 {
+    background-color: #faf8f7;
+    position: relative;
+    z-index: 1;
+    // background-color: #faf8f7;
+    transition: all 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 100px 0px 0px 0px;
+    .right {
+      padding: 50px;
+      padding-top: 20px;
+      .content {
+      }
+    }
+
+    svg {
+      width: calc(300% + 1.3px);
+      height: 500px;
+      transform: translateX(-50%) rotateY(180deg);
+    }
+
+    .elementor-shape {
+      transform: none;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+    }
+
+    .elementor-shape .elementor-shape-fill {
+      transform-origin: center;
+      transform: rotate(180deg);
+    }
+  }
+  .elementor-divider {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .separator {
+      display: flex;
+      margin: 0;
+      direction: ltr;
+      height: 1px;
+      background-color: #000000;
+    }
+  }
+  &-section {
+    &-header {
+      padding: 100px 0px 40px 0px;
+      text-align: center;
+      span.elementor-heading-title {
+        font-size: 18px;
+      }
+    }
+    .jet-item {
+      position: relative;
+      padding-top: 12px;
+      // padding-bottom: 12px;
+      h4 {
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        width: calc(100% - 24px);
+        text-align: center;
+        backdrop-filter: blur(2px);
+        padding: 10px 0px 10px 0px;
+        background-color: #0000006b;
+        transition: all 0.3s ease;
+        color: #fff;
+      }
+    }
+  }
+  &-section-4 {
+    background-color: #faf8f7;
+    background-image: url(../../assets/img/common/polaroid_home_04-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 100px 0px 100px 0px;
+  }
+}
