@@ -10,9 +10,9 @@ const CommonService = () => {
     return (
         <div className='container d-flex justify-content-center align-items-center'>
             <div className="container_commonService">
-                <div className='title_commonService'>
-                    <h3>TẠI JEJU WEDDING, BẠN HOÀN TOÀN YÊN TÂM VỚI CÁC DỊCH VỤ CƯỚI</h3>
-                    <span>
+                <div className='title_commonService '>
+                    <h3 className='d-flex justify-content-center align-items-center'>TẠI JEJU WEDDING, BẠN HOÀN TOÀN YÊN TÂM VỚI CÁC DỊCH VỤ CƯỚI</h3>
+                    <span className='d-flex justify-content-center align-items-center'>
                         JEJU WEDDING hiện có 2 chi nhánh tại Hà Nội được trang bị đầy đủ cơ sở vật chất và trang thiết bị hiện đại, showroom váy cưới với diện tích lên tới 500m2 thoả sức cho các cặp đôi lựa chọn những mẫu váy cưới được thiết kế riêng HOT TREND nhất thị trường, cùng studio chụp ảnh cưới được trang trí đa dạng concept, độc quyền cho cặp đôi của JEJU tại Hà Nội.
                     </span>
                 </div>
