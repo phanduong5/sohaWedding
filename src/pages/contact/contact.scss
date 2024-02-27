@@ -1,0 +1,26 @@
+.container {
+    &.Contact {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        //justify-content: center;
+    }
+}
+
+.container_Infomation {
+    .item_infomation {
+        display: flex;
+        justify-content: left;
+        margin-top: 5px;
+        .icon_infamation {
+            margin-right: 10px;
+        }
+    }
+}
+
+.line_Contact {
+    border-bottom: 1px solid black;
+    margin-top: 50px;
+}
+.icon_contact{
+    color: rgb(255, 167, 95);
+}
