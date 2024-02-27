@@ -32,7 +32,7 @@ const Home = () => {
         <span className="col textHome">
           <span>VỀ SOHA WEDDING</span>
           <h2>STUDIO ẢNH CƯỚI VỚI DỊCH VỤ CHUYÊN NGHIỆP HÀNG ĐẦU</h2>
-          <span>Được thành lập từ năm 2016, JEJU WEDDING đã được hơn 5000 cặp đôi tin tưởng và lựa chọn đồng hành. Không chỉ nổi tiếng về chụp ảnh cưới, tại JEJU WEDDING còn cung cấp nhiều dịch vụ khác như cho thuê váy cưới, vest cưới, áo dài, quay phóng sự cưới, makeup cô dâu, chụp ảnh gia đình; đào tạo nghề chụp ảnh cưới, photoshop và dựng video cưới hỏi; in thiệp cưới,...</span>
+          <span>Được thành lập từ năm 2016, SOHA WEDDING đã được hơn 5000 cặp đôi tin tưởng và lựa chọn đồng hành. Không chỉ nổi tiếng về chụp ảnh cưới, tại JEJU WEDDING còn cung cấp nhiều dịch vụ khác như cho thuê váy cưới, vest cưới, áo dài, quay phóng sự cưới, makeup cô dâu, chụp ảnh gia đình; đào tạo nghề chụp ảnh cưới, photoshop và dựng video cưới hỏi; in thiệp cưới,...</span>
           <div className="line"></div>
           <div className="Box_Context">
             <div className="Button_context_Home">
