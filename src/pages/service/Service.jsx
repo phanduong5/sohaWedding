@@ -9,6 +9,7 @@ import dvThiepCuoiImg from "../../assets/img/service/dich-vu-thiep-cuoi.avif";
 import dvDaoTaoNgheImg from "../../assets/img/service/dao-tao-nghe.avif";
 import { domainApp } from "../../router/router";
 import DetailConsultation from "../common/detail-consultation/DetailConsultation";
+import AlbumWending from "../common/album-wending/AlbumWending";
 
 const Service = () => {
   const section2Info = [
@@ -203,37 +204,12 @@ const Service = () => {
           </div>
         ))}
       </section>
-      <section className="service-section service-section-3">
-        <div className="service-section-header">
-          <h2 className="elementor-widget-container elementor-heading-title">
-            Album Ảnh Cưới
-          </h2>
-          <div className="elementor-widget-container">
-            <span className="elementor-heading-title">
-              Đa số khách hàng JEJU là các cặp đôi trẻ có phong cách thẩm mỹ
-              hiện đại
-            </span>
-          </div>
-        </div>
-        <div className="elementor-widget-container overflow-hidden">
-          <div className="jet-listing row">
-            {albumAnhCuoi.map((album) => (
-              <div
-                key={album.id}
-                className="jet-item col col-md-3 col-sm-6 col-12"
-              >
-                <img
-                  src={album.src}
-                  width="100%"
-                  height="auto"
-                  alt={album.name}
-                />
-                <h4 className="elementor-heading-title">{album.name}</h4>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AlbumWending
+        albumAnhCuoi={albumAnhCuoi}
+        title="Album Ảnh Cưới"
+        content="Đa số khách hàng JEJU là các cặp đôi trẻ có phong cách thẩm mỹ
+              hiện đại"
+      />
       <section className="service-section service-section-4">
         <DetailConsultation />
       </section>

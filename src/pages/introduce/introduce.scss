@@ -1,0 +1,80 @@
+.introduce.service {
+  .elementor-column {
+    width: 100%;
+    &-center {
+    }
+  }
+  .elementor-container.custom-padding {
+    padding: 100px 40px;
+  }
+  .section-2 {
+    background-color: #faf8f7;
+    &-left {
+    }
+    &-right {
+      padding: 20px;
+      p {
+        font-weight: 400;
+        line-height: 1.8em;
+        font-size: 18px;
+        font-family: "Arsenal", Sans-serif;
+      }
+    }
+    .icon-item {
+      padding: 10px;
+      &:hover {
+        cursor: pointer;
+        color: #ff6900;
+      }
+    }
+    h2.elementor-heading-title {
+      margin-bottom: 40px;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .row-item {
+      padding: 10px;
+    }
+    .elementor-icon-box-description,
+    .elementor-icon-box-title {
+      font-family: "Arsenal", Sans-serif;
+    }
+    h3.elementor-icon-box-title {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    p.elementor-icon-box-description {
+      font-size: 18px;
+      line-height: 1.6em;
+    }
+    .elementor-shape {
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+      direction: ltr;
+      bottom: -1px;
+    }
+    .elementor-shape.elementor-shape-bottom {
+      transform: rotate(180deg);
+      & > svg {
+        width: calc(101% + 1.3px);
+        height: 122px;
+      }
+    }
+    .elementor-shape.elementor-shape-top {
+      transform: rotateX(180deg);
+      bottom: -500px;
+      z-index: 0;
+      & > svg {
+        width: calc(300% + 1.3px);
+        height: 500px;
+        transform: translateX(-50%) rotateY(180deg);
+      }
+    }
+  }
+}
