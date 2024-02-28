@@ -171,22 +171,22 @@ const Service = () => {
         {section2Info.map((item, index) => (
           <div
             key={index}
-            className={`elementor-container d-flex justify-content-center ${
+            className={`elementor-container row ${
               index % 2 == 0 ? "" : "flex-row-reverse"
             }`}
           >
-            <div className="left">
+            <div className="col-md-6 left d-flex align-items-center">
               <img
                 src={item.image}
-                width={570}
+                width="100%"
                 height="auto"
                 alt="dich-vu-chup-anh-cuoi"
               />
             </div>
-            <div className="right d-flex align-items-center">
+            <div className="col-md-6 right d-flex align-items-center">
               <div className="d-flex flex-wrap">
                 <div className="elementor-widget elementor-heading-title">
-                  <h3 className="elementor-heading-title">{item.title}</h3>
+                  <h4 className="elementor-heading-title">{item.title}</h4>
                 </div>
                 <div className="elementor-widget elementor-heading-title span">
                   {item.content}

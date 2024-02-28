@@ -14,6 +14,7 @@ import Service from "../pages/service/Service";
 import NotFound from "../pages/not-found/NotFound";
 import Header from "../pages/common/header/Header";
 import Layout from "../Layout";
+import AlbumDetail from "../pages/album/AlbumDetail";
 
 export const domainApp = "http://localhost:3000";
 
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
       {
         path: "album",
         element: <Album />,
+      },
+      {
+        path: "album:id",
+        element: <AlbumDetail />,
       },
       {
         path: "contact",
@@ -40,6 +45,7 @@ export const router = createBrowserRouter([
       {
         path: "introduce",
         element: <Introduce />,
+        index: true,
       },
       {
         path: "news",
@@ -59,7 +65,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/",
-        element: <Navigate to={<Home />} />,
+        element: <Navigate to={<Introduce />} />,
       },
     ],
   },

@@ -11,6 +11,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import AlbumWending from "../common/album-wending/AlbumWending";
 import { domainApp } from "../../router/router";
+import CommonContext from "../common/commonContext/CommonContext";
+import DetailConsultation from "../common/detail-consultation/DetailConsultation";
 
 const Introduce = () => {
   const bgSlide = [
@@ -125,11 +127,11 @@ const Introduce = () => {
           </div>
         </div>
         <div className="elementor-container custom-padding">
-          <div className="d-flex align-items-center">
-            <div className="section-2-left">
-              <img src={section2Img} width={570} alt="section2Img" />
+          <div className="row d-flex align-items-center">
+            <div className="col-12 col-md-6 col-sm-12 section-2-left">
+              <img src={section2Img} width="100%" alt="section2Img" />
             </div>
-            <div className="section-2-right">
+            <div className="col-12 col-md-6 col-sm-12 section-2-right">
               <h6 className="elementor-heading-title elementor-widget">
                 VỀ JEJU WEDDING
               </h6>
@@ -187,7 +189,7 @@ const Introduce = () => {
               </h2>
               <div className="row">
                 {trustList.map((item, index) => (
-                  <div key={index} className="col col-md-3 row-item">
+                  <div key={index} className="col-12 col-md-3 row-item">
                     <h3 className="elementor-icon-box-title">{item.title}</h3>
                     <p className="elementor-icon-box-description">
                       {item.content}
@@ -220,6 +222,10 @@ const Introduce = () => {
           title="5000+ CẶP ĐÔI TIN TƯỞNG LỰA CHỌN"
           content="Thật tuyệt vời bởi JEJU WEDDING đã được hơn 5000 cặp đôi tin tưởng và lựa chọn đồng hành. Chúng mình luôn ở đây và lắng nghe điều bạn muốn, cố gắng hết mình ghi lại qua từng khoảnh khắc, từng cung bậc cảm xúc. Sẵn sàng thực hiện mọi mong muốn, mọi concept từ nhẹ nhàng, đơn giản đến sang trọng, độc đáo, dù là phong cách Hàn Quốc hay u Mỹ, hay chỉ là ảnh cưới truyền thống. Tại JEJU có đội ngũ nhiếp ảnh gia, designer, make-up artist chuyên nghiệp, trẻ trung, tận tâm với từng chi tiết trong album ảnh cưới để cho ra những album ảnh cưới hoàn hảo và hài lòng nhất với mỗi khách hàng."
         />
+      </div>
+      <DetailConsultation />
+      <div className="elementor-container">
+        <CommonContext />
       </div>
     </div>
   );

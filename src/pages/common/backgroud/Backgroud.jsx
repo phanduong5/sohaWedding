@@ -18,7 +18,10 @@ const Backgroud = ({ bgSlide, title }) => {
         >
           {bgSlide.map((item) => (
             <SwiperSlide key={item.id}>
-              <img src={item.src} alt={item.id} />
+              <div
+                style={{ backgroundImage: `url(${item.src})` }}
+                className="background-swipper-show"
+              ></div>
             </SwiperSlide>
           ))}
         </Swiper>

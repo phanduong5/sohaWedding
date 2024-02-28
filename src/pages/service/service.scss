@@ -139,7 +139,7 @@
   }
   &-section {
     &-header {
-      padding: 100px 0px 40px 0px;
+      padding: 100px 10px 40px 10px;
       text-align: center;
       span.elementor-heading-title {
         font-size: 18px;
@@ -172,4 +172,33 @@
     transition: all 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     padding: 100px 0px 100px 0px;
   }
+}
+
+/*Mobile resolution */
+@media only screen and (max-width: 767px) {
+  .service .elementor-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 8px;
+    .elementor-column {
+      width: 100%;
+    }
+  }
+}
+
+/* Tablet resolution */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .service .elementor-container {
+    justify-content: flex-start;
+    padding-left: 20px;
+    .elementor-column {
+      width: 46%;
+    }
+  }
+  .service-section-2 .right {
+    padding: 20px;
+  }
+}
+
+/* > PC low resolution */
+@media (min-width: 1025px) {
 }
