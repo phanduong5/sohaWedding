@@ -85,9 +85,7 @@ const Album = () => {
           pageIndex="Album"
         />
       </div>
-      <div className="elementor-container">
-        <CommonContext />
-      </div>
+      <CommonContext />
     </div>
   );
 };

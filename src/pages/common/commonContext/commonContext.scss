@@ -1,13 +1,43 @@
-.container_commonContact {
-    //background-color: #fcdede;
-    width: auto;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .img_commonConact {
-        height: 200px;
-        width: auto;
+.common-context {
+  padding-bottom: 50px;
+  .d-flex {
+    .elementor-widget-container {
+      width: 30%;
     }
+    h3.elementor-heading-title {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+  }
+  .elementor-container-check {
+    background-color: #fcdede;
+    position: relative;
+    z-index: 1000;
+    border-radius: 8px;
+  }
+  .button button {
+    font-weight: 400;
+    fill: #fff;
+    color: #fff;
+    background-color: #000;
+    height: 40px;
+    span {
+      text-transform: uppercase;
+    }
+  }
+  &.elementor-section {
+    background-color: #faf8f7;
+    padding-top: 100px;
+    border-radius: 4px;
+    position: relative;
+  }
+  .elementor-shape-top.elementor-shape {
+    top: 0;
+    transform: none;
+    svg {
+      width: calc(180% + 1.3px);
+      height: 206px;
+      transform: translateX(-29%) rotateY(0deg);
+    }
+  }
 }

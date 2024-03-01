@@ -1,9 +1,9 @@
 import React from "react";
 import "./album-wending.scss";
-import { useNavigate } from "react-router";
+import useNavigateParams from "../../../hook/useNavigateParams";
 
 const AlbumWending = ({ title, content, albumAnhCuoi, pageIndex }) => {
-  const navigate = useNavigate();
+  const { navigateWithParams } = useNavigateParams();
   return (
     <section className="service-section service-section-3">
       {pageIndex !== "Album" && (
@@ -27,7 +27,7 @@ const AlbumWending = ({ title, content, albumAnhCuoi, pageIndex }) => {
                 pageIndex == "Album" ? "col-md-4" : "col-md-3"
               } col-sm-6 col-12`}
               onClick={() => {
-                navigate("/album", { state: { id: album.id } });
+                navigateWithParams("album-detail", { id: album.id });
               }}
             >
               <img

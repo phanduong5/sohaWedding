@@ -27,7 +27,7 @@ export const router = createBrowserRouter([
         element: <Album />,
       },
       {
-        path: "album:id",
+        path: "album-detail",
         element: <AlbumDetail />,
       },
       {
@@ -65,7 +65,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/",
-        element: <Navigate to={<Introduce />} />,
+        element: <Navigate to="/introduce" />,
       },
     ],
   },

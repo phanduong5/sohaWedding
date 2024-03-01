@@ -224,9 +224,7 @@ const Introduce = () => {
         />
       </div>
       <DetailConsultation />
-      <div className="elementor-container">
-        <CommonContext />
-      </div>
+      <CommonContext />
     </div>
   );
 };
