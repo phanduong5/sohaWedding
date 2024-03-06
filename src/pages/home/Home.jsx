@@ -1,30 +1,38 @@
 import React from "react";
-import Head from "../common/head/head.jsx";
-import Menu from "../common/tavbar/Navbar.jsx";
 import ImageMove from "../common/backgroud/Backgroud.jsx";
 import ImageOne from "../../assets/img/anh1.jpg";
 import ImageTwo from "../../assets/img/anh2.jpg";
 import ImageThree from "../../assets/img/anh3.jpg";
-import Footed from "../common/footer/Footer.jsx";
 import ContextHome from "../common/commonContext/CommonContext.jsx";
 import ServiceHome from "../common/commonService/CommonService.jsx";
 import StyleHome from "../common/CommonStylePhoto/CommonStylePhoto.jsx";
 import "../home/home.scss";
-import PhotoSto from "../../assets/img/logo.jpg";
+import PhotoSto from "../../assets/img/home_04_image_02.avif";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const Home = () => {
-  const listImage = [ImageOne, ImageTwo, ImageThree];
+  const listImage = [
+    {
+      id: 1,
+      src: ImageOne,
+    },
+    {
+      id: 2,
+      src: ImageTwo,
+    },
+    {
+      id: 3,
+      src: ImageThree,
+    },
+  ];
   return (
     <>
-      <Head />
-      <Menu />
-      <ImageMove listImg={listImage} />
-      <div className="container">
+      <ImageMove bgSlide={listImage} />
+      <div className="container d-flex justify-content-center">
         <span className="row">
           <span className="col">
-            <img src={PhotoSto}></img>
+            <img className="img_home" src={PhotoSto}></img>
           </span>
           <span className="col textHome">
             <span>VỀ SOHA WEDDING</span>
@@ -57,7 +65,6 @@ const Home = () => {
       </div>
       <StyleHome />
       <ContextHome />
-      <Footed />
     </>
   );
 };
