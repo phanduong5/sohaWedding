@@ -9,12 +9,12 @@ import Endow from "../pages/endow/Endow";
 import Home from "../pages/home/Home";
 import Introduce from "../pages/introduce/Introduce";
 import News from "../pages/news/News";
-import Price from "../pages/price/Price";
+import Price from "../pages/price/pricePhotoWedding/Price";
 import Service from "../pages/service/Service";
 import NotFound from "../pages/not-found/NotFound";
-import Header from "../pages/common/header/Header";
 import Layout from "../Layout";
 import AlbumDetail from "../pages/album/AlbumDetail";
+import PriceAudio from "../pages/price/priceAudioWedding/priceAudio";
 
 export const domainApp = "http://localhost:3000";
 
@@ -52,8 +52,12 @@ export const router = createBrowserRouter([
         element: <News />,
       },
       {
-        path: "price",
+        path: "bao+gia+chup+anh+cuoi",
         element: <Price />,
+      },
+      {
+        path: "bao+gia+phong+su+cuoi",
+        element: <PriceAudio />,
       },
       {
         path: "service",

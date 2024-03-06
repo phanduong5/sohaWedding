@@ -12,8 +12,6 @@ import "../contact/contact.scss"
 const Contact = () => {
   return (
     <>
-      <HeadContext />
-      <MenuContext />
       <div className="container Contact">
         <div className="row">
           <div className="col lg-6">
@@ -49,12 +47,11 @@ const Contact = () => {
             </div>
           </div>
           <div className="col lg-6">
-            <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(Soha%20Wedding)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
+            <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(Soha%20Wedding)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
           </div>
         </div>
       </div>
       <ContextContext />
-      <FooterContext />
     </>
   )
 };
