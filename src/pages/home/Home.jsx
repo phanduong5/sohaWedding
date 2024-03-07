@@ -10,7 +10,7 @@ import "../home/home.scss";
 import PhotoSto from "../../assets/img/home_04_image_02.avif";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-
+import Feedback from "../common/common_feedback/Feedback.jsx"
 const Home = () => {
   const listImage = [
     {
@@ -38,9 +38,9 @@ const Home = () => {
             <span>VỀ SOHA WEDDING</span>
             <h2>STUDIO ẢNH CƯỚI VỚI DỊCH VỤ CHUYÊN NGHIỆP HÀNG ĐẦU</h2>
             <span>
-              Được thành lập từ năm 2016, JEJU WEDDING đã được hơn 5000 cặp đôi
+              Được thành lập từ năm 2016, SOHA WEDDING đã được hơn 5000 cặp đôi
               tin tưởng và lựa chọn đồng hành. Không chỉ nổi tiếng về chụp ảnh
-              cưới, tại JEJU WEDDING còn cung cấp nhiều dịch vụ khác như cho
+              cưới, tại SOHA WEDDING còn cung cấp nhiều dịch vụ khác như cho
               thuê váy cưới, vest cưới, áo dài, quay phóng sự cưới, makeup cô
               dâu, chụp ảnh gia đình; đào tạo nghề chụp ảnh cưới, photoshop và
               dựng video cưới hỏi; in thiệp cưới,...
@@ -64,6 +64,9 @@ const Home = () => {
         <ServiceHome />
       </div>
       <StyleHome />
+      <div className="Feedback_Home">
+        <Feedback/>
+      </div>
       <ContextHome />
     </>
   );
