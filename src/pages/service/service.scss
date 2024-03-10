@@ -21,6 +21,11 @@
   .elementor-column {
     width: 40%;
   }
+  &.home {
+    .elementor-shape {
+      bottom: -100px;
+    }
+  }
   .elementor-shape {
     transform: rotate(180deg);
     z-index: 2;
