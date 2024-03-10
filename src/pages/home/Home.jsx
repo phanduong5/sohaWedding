@@ -10,7 +10,18 @@ import "../home/home.scss";
 import PhotoSto from "../../assets/img/home_04_image_02.avif";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import Feedback from "../common/common_feedback/Feedback.jsx"
+import Feedback from "../common/common_feedback/Feedback.jsx";
+import section2Img from "../../assets/img/introduce/home_04_image_02.avif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faYoutube,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
+import AlbumWending from "../common/album-wending/AlbumWending.jsx";
+import { domainApp } from "../../router/router.js";
+import DetailConsultation from "../common/detail-consultation/DetailConsultation.jsx";
 const Home = () => {
   const listImage = [
     {
@@ -26,49 +37,121 @@ const Home = () => {
       src: ImageThree,
     },
   ];
+  const listIcon = [faFacebookF, faTwitter, faYoutube, faTiktok];
+  const albumAnhCuoi = [
+    {
+      id: 1,
+      name: "ảnh cưới studio",
+      src: `${domainApp}/images/service/ảnh cưới studio.avif`,
+    },
+    {
+      id: 2,
+      name: "ảnh cưới studio + xe vespa cổ",
+      src: `${domainApp}/images/service/ảnh cưới studio + xe vespa cổ.webp`,
+    },
+    {
+      id: 3,
+      name: "ảnh cưới santorini + đường phố",
+      src: `${domainApp}/images/service/ảnh cưới santorini + đường phố.avif`,
+    },
+    {
+      id: 4,
+      name: "ảnh cưới xe vespa + studio thứ 2",
+      src: `${domainApp}/images/service/ảnh cưới xe vespa + studio thứ 2.jpg`,
+    },
+    {
+      id: 5,
+      name: "ảnh cưới studio + ga tàu điện",
+      src: `${domainApp}/images/service/ảnh cưới studio + ga tàu điện.jpg`,
+    },
+    {
+      id: 6,
+      name: "ảnh cưới studio + hồ tây",
+      src: `${domainApp}/images/service/ảnh cưới studio + hồ tây.avif`,
+    },
+    {
+      id: 7,
+      name: "ảnh cưới phim trường 5 garden + cafe",
+      src: `${domainApp}/images/service/ảnh cưới phim trường 5 garden + cafe.webp`,
+    },
+    {
+      id: 8,
+      name: "ảnh cưới studio + áo dài vintage",
+      src: `${domainApp}/images/service/ảnh cưới studio + áo dài vintage.avif`,
+    },
+  ];
   return (
-    <>
-      <ImageMove bgSlide={listImage} />
-      <div className="container d-flex justify-content-center">
-        <span className="row">
-          <span className="col">
-            <img className="img_home" src={PhotoSto}></img>
-          </span>
-          <span className="col textHome">
-            <span>VỀ SOHA WEDDING</span>
-            <h2>STUDIO ẢNH CƯỚI VỚI DỊCH VỤ CHUYÊN NGHIỆP HÀNG ĐẦU</h2>
-            <span>
-              Được thành lập từ năm 2016, SOHA WEDDING đã được hơn 5000 cặp đôi
-              tin tưởng và lựa chọn đồng hành. Không chỉ nổi tiếng về chụp ảnh
-              cưới, tại SOHA WEDDING còn cung cấp nhiều dịch vụ khác như cho
-              thuê váy cưới, vest cưới, áo dài, quay phóng sự cưới, makeup cô
-              dâu, chụp ảnh gia đình; đào tạo nghề chụp ảnh cưới, photoshop và
-              dựng video cưới hỏi; in thiệp cưới,...
-            </span>
-            <div className="line"></div>
-            <div className="Box_Context">
-              <div className="Button_context_Home">
-                <button className="Button_context"> Tìm Hiểu Thêm</button>
+    <div className="home introduce service">
+      <ImageMove home bgSlide={listImage} />
+      <div className="section-2">
+        <div style={{ position: "relative" }}>
+          <div class="elementor-shape elementor-shape-top" data-negative="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1000 100"
+              preserveAspectRatio="none"
+            >
+              <path
+                class="elementor-shape-fill"
+                d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
+	c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
+	c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"
+              ></path>
+            </svg>{" "}
+          </div>
+        </div>
+        <div className="elementor-container custom-padding">
+          <div className="row d-flex align-items-center">
+            <div className="col-12 col-md-6 col-sm-12 section-2-left">
+              <img src={section2Img} width="100%" alt="section2Img" />
+            </div>
+            <div className="col-12 col-md-6 col-sm-12 section-2-right">
+              <h6 className="elementor-heading-title elementor-widget">
+                VỀ JEJU WEDDING
+              </h6>
+              <h2 className="elementor-heading-title elementor-widget">
+                STUDIO ẢNH CƯỚI VỚI DỊCH VỤ CHUYÊN NGHIỆP HÀNG ĐẦU
+              </h2>
+              <div className="elementor-element">
+                <p>
+                  Được thành lập từ năm 2016, SOHA WEDDING đã được hơn 5000 cặp
+                  đôi tin tưởng và lựa chọn đồng hành. Không chỉ nổi tiếng về
+                  chụp ảnh cưới, tại SOHA WEDDING còn cung cấp nhiều dịch vụ
+                  khác như cho thuê váy cưới, vest cưới, áo dài, quay phóng sự
+                  cưới, makeup cô dâu, chụp ảnh gia đình; đào tạo nghề chụp ảnh
+                  cưới, photoshop và dựng video cưới hỏi; in thiệp cưới,...
+                </p>
               </div>
-              <div className="icon_Context">
-                <span className="icon_Context_item">
-                  <FacebookIcon />
-                </span>
-                <YouTubeIcon />
+              <div className="elementor-element d-flex mt-4">
+                {listIcon.map((item, index) => (
+                  <div key={index} className="icon-item">
+                    <FontAwesomeIcon icon={item} />
+                  </div>
+                ))}
               </div>
             </div>
-          </span>
-        </span>
+          </div>
+        </div>
       </div>
       <div className="Cange">
         <ServiceHome />
       </div>
-      <StyleHome />
+      <div className="elementor-container">
+        <AlbumWending
+          albumAnhCuoi={albumAnhCuoi}
+          title="Album Ảnh Cưới"
+          content="Đa số khách hàng JEJU là các cặp đôi trẻ có phong cách thẩm mỹ
+                hiện đại"
+        />
+      </div>
+      <section className="service-section service-section-4">
+        <DetailConsultation />
+      </section>
       <div className="Feedback_Home">
-        <Feedback/>
+        <Feedback />
       </div>
       <ContextHome />
-    </>
+    </div>
   );
 };
 export default Home;

@@ -6,6 +6,9 @@
       height: 500px;
       background-position: 50%;
       background-size: cover;
+      &.home {
+        height: 950px;
+      }
     }
   }
   &-content {

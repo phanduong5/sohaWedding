@@ -3,7 +3,7 @@ import "./backgroud.scss";
 import { A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import imgLeaves from "../../../assets/img/introduce/image_leaves_01.avif";
-const Backgroud = ({ bgSlide, title }) => {
+const Backgroud = ({ bgSlide, title, home }) => {
   return (
     <div className="background">
       <div className="background-swipper">
@@ -20,16 +20,18 @@ const Backgroud = ({ bgSlide, title }) => {
             <SwiperSlide key={item.id}>
               <div
                 style={{ backgroundImage: `url(${item.src})` }}
-                className="background-swipper-show"
+                className={`background-swipper-show ${home ? "home" : ""}`}
               ></div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      <div className="background-content">
-        <img src={imgLeaves} alt="img leaves" />
-        <h1 className="elementor-heading-title">{title}</h1>
-      </div>
+      {!home && (
+        <div className="background-content">
+          <img src={imgLeaves} alt="img leaves" />
+          <h1 className="elementor-heading-title">{title}</h1>
+        </div>
+      )}
     </div>
   );
 };
