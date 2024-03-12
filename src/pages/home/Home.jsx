@@ -1,15 +1,11 @@
 import React from "react";
 import ImageMove from "../common/backgroud/Backgroud.jsx";
-import ImageOne from "../../assets/img/anh1.jpg";
-import ImageTwo from "../../assets/img/anh2.jpg";
-import ImageThree from "../../assets/img/anh3.jpg";
+import ImageOne from "../../assets/img/anhchay1.jpg";
+import ImageTwo from "../../assets/img/anhchay2.jpg";
+import ImageThree from "../../assets/img/anhchay3.jpg";
 import ContextHome from "../common/commonContext/CommonContext.jsx";
 import ServiceHome from "../common/commonService/CommonService.jsx";
-import StyleHome from "../common/CommonStylePhoto/CommonStylePhoto.jsx";
 import "../home/home.scss";
-import PhotoSto from "../../assets/img/home_04_image_02.avif";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import Feedback from "../common/common_feedback/Feedback.jsx";
 import section2Img from "../../assets/img/introduce/home_04_image_02.avif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,6 +18,15 @@ import {
 import AlbumWending from "../common/album-wending/AlbumWending.jsx";
 import { domainApp } from "../../router/router.js";
 import DetailConsultation from "../common/detail-consultation/DetailConsultation.jsx";
+import AnhCuoiStudio from "../../assets/img/StylePhoto/Studio Photo/anhchonj.jpg"
+import AnhCuoiStudio_vespa from "../../assets/img/Abumle_ảnh_cươi/ảnh_studio_2/anhchon.jpg"
+import AnhCuoiDuongPho from "../../assets/img/StylePhoto/Studio anh vespa car photo/anhchon.jpg"
+import AnhCuoiStudioAoDai from "../../assets/img/StylePhoto/Studio and Ao Dai/Photochose.jpg"
+import AnhCuoiStudioNgoaiTroi from "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_hồ/anhchon.jpg"
+import AnhCuoiStudioNgoaiTroitoi from "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_ngoài_trời_tối/anhchon.jpg"
+import AnhCuoiPhimTruong from "../../assets/img/Abumle_ảnh_cươi/phimtruong1/anhchon.jpg"
+import AnhCuoiStudioNgoaiDuong from "../../assets/img/StylePhoto/Studio and Metro/PHOTOCHOSE.jpg"
+
 const Home = () => {
   const listImage = [
     {
@@ -42,42 +47,50 @@ const Home = () => {
     {
       id: 1,
       name: "ảnh cưới studio",
-      src: `${domainApp}/images/service/ảnh cưới studio.avif`,
+      //src: `${domainApp}/images/service/ảnh cưới studio.avif`,
+      src: AnhCuoiStudio
     },
     {
       id: 2,
       name: "ảnh cưới studio + xe vespa cổ",
-      src: `${domainApp}/images/service/ảnh cưới studio + xe vespa cổ.webp`,
+      //src: `${domainApp}/images/service/ảnh cưới studio + xe vespa cổ.webp`,
+      src : AnhCuoiStudio_vespa
     },
     {
       id: 3,
       name: "ảnh cưới santorini + đường phố",
-      src: `${domainApp}/images/service/ảnh cưới santorini + đường phố.avif`,
+      //src: `${domainApp}/images/service/ảnh cưới santorini + đường phố.avif`,
+      src : AnhCuoiDuongPho
     },
     {
       id: 4,
-      name: "ảnh cưới xe vespa + studio thứ 2",
-      src: `${domainApp}/images/service/ảnh cưới xe vespa + studio thứ 2.jpg`,
+      name: "ảnh Áo Dài + studio thứ 2",
+      //src: `${domainApp}/images/service/ảnh cưới xe vespa + studio thứ 2.jpg`,
+      src : AnhCuoiStudioAoDai
     },
     {
       id: 5,
-      name: "ảnh cưới studio + ga tàu điện",
-      src: `${domainApp}/images/service/ảnh cưới studio + ga tàu điện.jpg`,
+      name: "ảnh cưới studio ngoài trời",
+      //src: `${domainApp}/images/service/ảnh cưới studio + ga tàu điện.jpg`,
+      src : AnhCuoiStudioNgoaiTroitoi
     },
     {
       id: 6,
       name: "ảnh cưới studio + hồ tây",
-      src: `${domainApp}/images/service/ảnh cưới studio + hồ tây.avif`,
+      //src: `${domainApp}/images/service/ảnh cưới studio + hồ tây.avif`,
+      src : AnhCuoiStudioNgoaiTroi
     },
     {
       id: 7,
       name: "ảnh cưới phim trường 5 garden + cafe",
-      src: `${domainApp}/images/service/ảnh cưới phim trường 5 garden + cafe.webp`,
+      //src: `${domainApp}/images/service/ảnh cưới phim trường 5 garden + cafe.webp`,
+      src : AnhCuoiPhimTruong
     },
     {
       id: 8,
-      name: "ảnh cưới studio + áo dài vintage",
-      src: `${domainApp}/images/service/ảnh cưới studio + áo dài vintage.avif`,
+      name: "ảnh cưới ngoài trời + áo dài vintage",
+      //src: `${domainApp}/images/service/ảnh cưới studio + áo dài vintage.avif`,
+      src : AnhCuoiStudioNgoaiDuong
     },
   ];
   return (
@@ -107,7 +120,7 @@ const Home = () => {
             </div>
             <div className="col-12 col-md-6 col-sm-12 section-2-right">
               <h6 className="elementor-heading-title elementor-widget">
-                VỀ JEJU WEDDING
+                VỀ SOHA WEDDING
               </h6>
               <h2 className="elementor-heading-title elementor-widget">
                 STUDIO ẢNH CƯỚI VỚI DỊCH VỤ CHUYÊN NGHIỆP HÀNG ĐẦU
@@ -140,7 +153,7 @@ const Home = () => {
         <AlbumWending
           albumAnhCuoi={albumAnhCuoi}
           title="Album Ảnh Cưới"
-          content="Đa số khách hàng JEJU là các cặp đôi trẻ có phong cách thẩm mỹ
+          content="Đa số khách hàng SOHA là các cặp đôi trẻ có phong cách thẩm mỹ
                 hiện đại"
         />
       </div>

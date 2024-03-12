@@ -24,7 +24,7 @@ const Service = () => {
       image: dvThueVayCuoiImg,
       title: "DỊCH VỤ CHO THUÊ VÁY CƯỚI",
       content:
-        "Sở hữu 2 thương hiệu váy dưới độc quyền là JEJU WEDDING và BORA Bridal, với hơn 2000+ mẫu váy cưới được thiết kế riêng, độc đáo cho cô dâu lựa chọn.",
+        "Sở hữu 2 thương hiệu váy dưới độc quyền là SOHA WEDDING và BORA Bridal, với hơn 2000+ mẫu váy cưới được thiết kế riêng, độc đáo cho cô dâu lựa chọn.",
       more: "TÌM HIỂU THÊM",
     },
     {
@@ -112,10 +112,10 @@ const Service = () => {
         <div className="elementor-container">
           <div className="elementor-column">
             <div className="elementor-widget-container">
-              <h6 className="elementor-heading-title">JEJU WEDDING</h6>
+              <h6 className="elementor-heading-title">SOHA WEDDING</h6>
             </div>
             <div className="elementor-element elementor-widget">
-              <h1 className="elementor-heading-title">CÁC DỊCH VỤ TẠI JEJU</h1>
+              <h1 className="elementor-heading-title">CÁC DỊCH VỤ TẠI SOHA</h1>
             </div>
             <div className="elementor-widget">
               <span className="elementor-heading-title span">
@@ -207,7 +207,7 @@ const Service = () => {
       <AlbumWending
         albumAnhCuoi={albumAnhCuoi}
         title="Album Ảnh Cưới"
-        content="Đa số khách hàng JEJU là các cặp đôi trẻ có phong cách thẩm mỹ
+        content="Đa số khách hàng SOHA là các cặp đôi trẻ có phong cách thẩm mỹ
               hiện đại"
       />
       <section className="service-section service-section-4">
