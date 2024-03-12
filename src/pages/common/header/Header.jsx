@@ -1,5 +1,5 @@
 import React from "react";
-import logoWeb from "../../../assets/img/LOGO-WEB.png";
+import logoWeb from "../../../assets/img/logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
@@ -14,17 +14,17 @@ const Header = () => {
     {
       icon: faLocationDot,
       title: "Địa chỉ",
-      description: "175 Đại La, Hai Bà Trưng, Hà Nội",
+      description: "199 giáp nhất, Thanh xuân, Hà Nội",
     },
     {
       icon: faEnvelope,
       title: "Email",
-      description: "jejuwedding.vn@gmail.com",
+      description: "sohawedding199@gmail.com",
     },
     {
       icon: faPhoneAlt,
       title: "Hotline",
-      description: "0888.696960",
+      description: "0867058105",
     },
   ];
   const menu = [
@@ -85,12 +85,12 @@ const Header = () => {
       children: [
         {
           element: "Báo giá chụp ảnh cưới",
-          router: "/price/",
+          router: "/bao+gia+chup+anh+cuoi",
           children: [],
         },
         {
           element: "Báo giá phóng sự cưới",
-          router: "/price/",
+          router: "/bao+gia+phong+su+cuoi",
           children: [],
         },
       ],
@@ -117,7 +117,7 @@ const Header = () => {
     <div id="header" className="header">
       <div className="header-top">
         <div className="header-top-logo">
-          <img src={logoWeb} width={320} height={52} alt="logo" />
+          <img src={logoWeb} width={150} height={70} alt="logo" />
         </div>
         <div className="header-top-info">
           {boxContent.map((box, index) => (

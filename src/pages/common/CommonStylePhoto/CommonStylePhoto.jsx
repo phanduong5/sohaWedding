@@ -17,7 +17,7 @@ const CommonStylePhoto = () => {
                         ALBUM ẢNH CƯỚI
                     </h3>
                     <span>
-                        Đa số khách hàng JEJU là các cặp đôi trẻ có phong cách thẩm mỹ hiện đại
+                        Đa số khách hàng SOHA là các cặp đôi trẻ có phong cách thẩm mỹ hiện đại
                     </span>
                 </div>
                 <div>

@@ -4,7 +4,14 @@ import Backgroud from "../common/backgroud/Backgroud";
 import AlbumWending from "../common/album-wending/AlbumWending";
 import "./Album.scss";
 import CommonContext from "../common/commonContext/CommonContext";
-
+import AnhCuoiStudio from "../../assets/img/StylePhoto/Studio Photo/anhchonj.jpg"
+import AnhCuoiStudio_vespa from "../../assets/img/Abumle_ảnh_cươi/ảnh_studio_2/anhchon.jpg"
+import AnhCuoiDuongPho from "../../assets/img/StylePhoto/Studio anh vespa car photo/anhchon.jpg"
+import AnhCuoiStudioAoDai from "../../assets/img/StylePhoto/Studio and Ao Dai/Photochose.jpg"
+import AnhCuoiStudioNgoaiTroi from "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_hồ/anhchon.jpg"
+import AnhCuoiStudioNgoaiTroitoi from "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_ngoài_trời_tối/anhchon.jpg"
+import AnhCuoiPhimTruong from "../../assets/img/Abumle_ảnh_cươi/phimtruong1/anhchon.jpg"
+import AnhCuoiStudioNgoaiDuong from "../../assets/img/StylePhoto/Studio and Metro/PHOTOCHOSE.jpg"
 const Album = () => {
   const bgSlide = [
     {
@@ -36,42 +43,50 @@ const Album = () => {
     {
       id: 1,
       name: "ảnh cưới studio",
-      src: `${domainApp}/images/service/ảnh cưới studio.avif`,
+      //src: `${domainApp}/images/service/ảnh cưới studio.avif`,
+      src: AnhCuoiStudio
     },
     {
       id: 2,
       name: "ảnh cưới studio + xe vespa cổ",
-      src: `${domainApp}/images/service/ảnh cưới studio + xe vespa cổ.webp`,
+      //src: `${domainApp}/images/service/ảnh cưới studio + xe vespa cổ.webp`,
+      src : AnhCuoiStudio_vespa
     },
     {
       id: 3,
       name: "ảnh cưới santorini + đường phố",
-      src: `${domainApp}/images/service/ảnh cưới santorini + đường phố.avif`,
+      //src: `${domainApp}/images/service/ảnh cưới santorini + đường phố.avif`,
+      src : AnhCuoiDuongPho
     },
     {
       id: 4,
-      name: "ảnh cưới xe vespa + studio thứ 2",
-      src: `${domainApp}/images/service/ảnh cưới xe vespa + studio thứ 2.jpg`,
+      name: "ảnh Áo Dài + studio thứ 2",
+      //src: `${domainApp}/images/service/ảnh cưới xe vespa + studio thứ 2.jpg`,
+      src : AnhCuoiStudioAoDai
     },
     {
       id: 5,
-      name: "ảnh cưới studio + ga tàu điện",
-      src: `${domainApp}/images/service/ảnh cưới studio + ga tàu điện.jpg`,
+      name: "ảnh cưới studio ngoài trời",
+      //src: `${domainApp}/images/service/ảnh cưới studio + ga tàu điện.jpg`,
+      src : AnhCuoiStudioNgoaiTroitoi
     },
     {
       id: 6,
       name: "ảnh cưới studio + hồ tây",
-      src: `${domainApp}/images/service/ảnh cưới studio + hồ tây.avif`,
+      //src: `${domainApp}/images/service/ảnh cưới studio + hồ tây.avif`,
+      src : AnhCuoiStudioNgoaiTroi
     },
     {
       id: 7,
       name: "ảnh cưới phim trường 5 garden + cafe",
-      src: `${domainApp}/images/service/ảnh cưới phim trường 5 garden + cafe.webp`,
+      //src: `${domainApp}/images/service/ảnh cưới phim trường 5 garden + cafe.webp`,
+      src : AnhCuoiPhimTruong
     },
     {
       id: 8,
-      name: "ảnh cưới studio + áo dài vintage",
-      src: `${domainApp}/images/service/ảnh cưới studio + áo dài vintage.avif`,
+      name: "ảnh cưới ngoài trời + áo dài vintage",
+      //src: `${domainApp}/images/service/ảnh cưới studio + áo dài vintage.avif`,
+      src : AnhCuoiStudioNgoaiDuong
     },
   ];
   return (

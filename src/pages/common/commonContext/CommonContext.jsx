@@ -63,7 +63,7 @@ const CommonContext = () => {
                 </h3>
                 <div>
                   <span className="elementor-heading-title">
-                    JEJU Wedding sẽ đồng hành và hỗ trợ bạn trong suốt quá trình
+                    SOHA Wedding sẽ đồng hành và hỗ trợ bạn trong suốt quá trình
                     chuẩn bị cho ngày trọng đại, hãy để lại thông tin liên hệ
                     tại đây bạn nhé!
                   </span>
