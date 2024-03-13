@@ -2,7 +2,9 @@
   padding-bottom: 50px;
   .d-flex {
     .elementor-widget-container {
-      width: 30%;
+      margin: -60px -80px -80px 10px;
+      width: 100%;
+      text-align: center;
     }
     h3.elementor-heading-title {
       text-transform: uppercase;
@@ -14,6 +16,9 @@
     position: relative;
     z-index: 1000;
     border-radius: 8px;
+    &-left {
+      width: 27%;
+    }
   }
   .button button {
     font-weight: 400;

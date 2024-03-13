@@ -15,6 +15,7 @@ import NotFound from "../pages/not-found/NotFound";
 import Layout from "../Layout";
 import AlbumDetail from "../pages/album/AlbumDetail";
 import PriceAudio from "../pages/price/priceAudioWedding/priceAudio";
+import ServiceDetail from "../pages/service-detail/ServiceDetail";
 
 export const domainApp = "http://localhost:3000";
 
@@ -41,11 +42,11 @@ export const router = createBrowserRouter([
       {
         path: "home",
         element: <Home />,
+        index: true,
       },
       {
         path: "introduce",
         element: <Introduce />,
-        index: true,
       },
       {
         path: "news",
@@ -62,6 +63,30 @@ export const router = createBrowserRouter([
       {
         path: "service",
         element: <Service />,
+      },
+      {
+        path: "dich-vu-cho-thue-vay-cuoi",
+        element: <ServiceDetail />,
+      },
+      {
+        path: "dich-vu-chup-anh-cuoi",
+        element: <ServiceDetail />,
+      },
+      {
+        path: "dich-vu-chup-anh-gia-dinh",
+        element: <ServiceDetail />,
+      },
+      {
+        path: "dich-vu-chup-quay-phong-su-ngay-cuoi",
+        element: <ServiceDetail />,
+      },
+      {
+        path: "dich-vu-make-up-co-dau",
+        element: <ServiceDetail />,
+      },
+      {
+        path: "dich-vu-dao-tao-nghe",
+        element: <ServiceDetail />,
       },
       {
         path: "*",
