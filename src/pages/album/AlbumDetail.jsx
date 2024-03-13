@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useLocation } from "react-router";
 import Backgroud from "../common/backgroud/Backgroud";
 import CommonContext from "../common/commonContext/CommonContext";
 import "./Album.scss";
 import { imageAlbumDetail } from "../mock-data/imagesFake";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Counter from "yet-another-react-lightbox/plugins/counter";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/counter.css";
 
 const AlbumDetail = () => {
   let location = useLocation();
@@ -40,13 +47,15 @@ const AlbumDetail = () => {
   const [rotateX, setRotateX] = useState(0);
   const [rotateY, setRotateY] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [indexLightbox, setIndexLightbox] = useState(0);
 
   const handleMouseMove = (index, e) => {
     const { clientX, clientY } = e;
     const { left, top, width, height } = e.target.getBoundingClientRect();
 
-    const rotateYValue = -30 * ((clientX - left - width / 2) / width);
-    const rotateXValue = 30 * ((clientY - top - height / 2) / height);
+    const rotateYValue = -20 * ((clientX - left - width / 2) / width);
+    const rotateXValue = 20 * ((clientY - top - height / 2) / height);
 
     setRotateY(rotateYValue);
     setRotateX(rotateXValue);
@@ -59,35 +68,62 @@ const AlbumDetail = () => {
     setHoveredIndex(null);
   };
 
+  const albumListLightbox = useMemo(() => {
+    const newData = imageAlbumList[idAlbum - 1].list.map((item, index) => ({
+      src: item,
+      alt: `${item}-${index}`,
+      width: 3840,
+      height: 2560,
+    }));
+    return newData;
+  }, [imageAlbumList]);
+
   return (
     <div className="service album-detail">
       <Backgroud bgSlide={bgSlide} title={imageAlbumList[idAlbum - 1].name} />
       {/* Backgroud component */}
       <div className="elementor-container">
-        <div className="gallery d-flex flex-column">
+        <div className="gallery row">
           {imageAlbumList[idAlbum - 1].list.map((image, index) => (
             <div
-              className="image-container col-md-4"
+              className="image-container col-md-4 col-sm-6"
               key={index}
               onMouseMove={(e) => handleMouseMove(index, e)}
               onMouseLeave={handleMouseLeave}
+              onClick={() => {
+                setIsOpen(true);
+                setIndexLightbox(index);
+              }}
             >
-              <img
-                src={image}
-                alt={`Image ${index}`}
-                className="album-detail-img"
+              <div
+                className="image-container-inner"
                 style={{
                   transform:
                     hoveredIndex === index
                       ? `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1, 1, 1)`
                       : "",
                 }}
-              />
+              >
+                <img
+                  src={image}
+                  alt={`Image ${index}`}
+                  className="album-detail-img"
+                />
+              </div>
             </div>
           ))}
         </div>
       </div>
       <CommonContext />
+      {isOpen && (
+        <Lightbox
+          index={indexLightbox}
+          open={isOpen}
+          plugins={[Counter, Zoom, Fullscreen]}
+          close={() => setIsOpen(false)}
+          slides={albumListLightbox}
+        />
+      )}
     </div>
   );
 };

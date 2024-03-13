@@ -44,32 +44,32 @@ const Header = () => {
       children: [
         {
           element: "Dịch vụ cho thuê váy cưới",
-          router: "/service/",
+          router: "/dich-vu-cho-thue-vay-cuoi",
           children: [],
         },
         {
           element: "Dịch vụ chụp ảnh cưới",
-          router: "/service/",
+          router: "/dich-vu-chup-anh-cuoi",
           children: [],
         },
         {
           element: "Dịch vụ chụp ảnh gia đình",
-          router: "/service/",
+          router: "/dich-vu-chup-anh-gia-dinh",
           children: [],
         },
         {
           element: "Dịch vụ chụp/ quay phóng sự ngày cưới",
-          router: "/service/",
+          router: "/dich-vu-chup-quay-phong-su-ngay-cuoi",
           children: [],
         },
         {
           element: "Dịch vụ Make-up cô dâu",
-          router: "/service/",
+          router: "/dich-vu-make-up-co-dau",
           children: [],
         },
         {
           element: "Dịch vụ đào tạo nghề",
-          router: "/service/",
+          router: "/dich-vu-dao-tao-nghe",
           children: [],
         },
       ],
@@ -151,9 +151,9 @@ const Header = () => {
                   {menuItem.children && menuItem.children.length
                     ? menuItem.children.map((item, index) => (
                         <li key={index}>
-                          <a className="link-child" href="">
+                          <Link to={item.router} className="link-child" href="">
                             {item.element}
-                          </a>
+                          </Link>
                         </li>
                       ))
                     : null}

@@ -53,8 +53,14 @@ const CommonContext = () => {
       <div className="elementor-container">
         <div className="elementor-container-check">
           <div className="d-flex">
-            <div className="elementor-widget-container">
-              <img src={home_04_image_02} alt="home_04_image_02" width="100%" />
+            <div className="elementor-container-check-left">
+              <div className="elementor-widget-container">
+                <img
+                  src={home_04_image_02}
+                  alt="home_04_image_02"
+                  width="100%"
+                />
+              </div>
             </div>
             <div className="row align-items-center">
               <div className="col-md-9 p-5">

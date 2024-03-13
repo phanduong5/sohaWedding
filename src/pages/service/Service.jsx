@@ -10,6 +10,8 @@ import dvDaoTaoNgheImg from "../../assets/img/service/dao-tao-nghe.avif";
 import { domainApp } from "../../router/router";
 import DetailConsultation from "../common/detail-consultation/DetailConsultation";
 import AlbumWending from "../common/album-wending/AlbumWending";
+import ServiceSlide from "../common/service-slide/ServiceSlide";
+import bgImage from "../../assets/img/service/adad.jpg";
 
 const Service = () => {
   const section2Info = [
@@ -108,48 +110,16 @@ const Service = () => {
   ];
   return (
     <div className="service">
-      <section className="service-section service-section-1 service-bg">
-        <div className="elementor-container">
-          <div className="elementor-column">
-            <div className="elementor-widget-container">
-              <h6 className="elementor-heading-title">SOHA WEDDING</h6>
-            </div>
-            <div className="elementor-element elementor-widget">
-              <h1 className="elementor-heading-title">CÁC DỊCH VỤ TẠI SOHA</h1>
-            </div>
-            <div className="elementor-widget">
-              <span className="elementor-heading-title span">
-                Cung cấp nhiều dịch vụ khác như cho thuê váy cưới, vest cưới, áo
-                dài, quay phóng sự cưới, makeup cô dâu, chụp ảnh gia đình; đào
-                tạo nghề chụp ảnh cưới, photoshop và dựng video cưới hỏi; in
-                thiệp cưới,...
-              </span>
-            </div>
-            <div className="elementor-widget d-flex">
-              <a href="" className="elementor-button-link">
-                LIÊN HỆ
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          className="elementor-shape elementor-shape-bottom w-100"
-          data-negative="false"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1000 100"
-            preserveAspectRatio="none"
-          >
-            <path
-              className="elementor-shape-fill"
-              d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-          c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-          c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-            ></path>
-          </svg>{" "}
-        </div>
-      </section>
+      <ServiceSlide
+        h6="SOHA WEDDING"
+        h1="CÁC DỊCH VỤ TẠI SOHA"
+        btnText="LIÊN HỆ"
+        desc="Cung cấp nhiều dịch vụ khác như cho thuê váy cưới, vest cưới, áo
+        dài, quay phóng sự cưới, makeup cô dâu, chụp ảnh gia đình; đào
+        tạo nghề chụp ảnh cưới, photoshop và dựng video cưới hỏi; in
+        thiệp cưới,..."
+        bgImage={bgImage}
+      />
       <section className="service-section service-section-2">
         <div
           className="elementor-shape elementor-shape-top w-100"

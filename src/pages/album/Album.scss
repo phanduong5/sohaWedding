@@ -5,23 +5,22 @@
       width: 100%;
       height: auto;
     }
+    .elementor-container {
+      padding: 60px 0;
+    }
   }
 }
 
 .image-container {
   position: relative;
   display: inline-block;
-  perspective: 1000px; /* Điều chỉnh giá trị này để thay đổi độ lớn của hiệu ứng */
-}
-
-.image-container img {
-  transition: transform 0.4s ease;
-}
-
-.image-container:hover img {
-  transform: rotateY(20deg) rotateX(-20deg); /* Điều chỉnh góc quay theo ý muốn */
-  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.45),
-    0 50px 90px 0 rgba(51, 51, 51, 0.15);
+  &-inner {
+    border-radius: 6px;
+  }
+  &-inner:hover {
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.45),
+      0 50px 90px 0 rgba(51, 51, 51, 0.15);
+  }
 }
 
 .hovered {
