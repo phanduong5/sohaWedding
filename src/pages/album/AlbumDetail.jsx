@@ -11,36 +11,41 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
+import Masonry from "@mui/lab/Masonry";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { domainApp } from "../../router/router";
 
 const AlbumDetail = () => {
   let location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const idAlbum = queryParams.get("id");
-  const imageAlbumList = imageAlbumDetail();
+  const imageAlbumList = useMemo(() => {
+    return imageAlbumDetail();
+  }, []);
   const bgSlide = [
     {
       id: 1,
-      src: "http://localhost:3000/images/introduce/about_slider_01.jpg",
+      src: `${domainApp}/images/introduce/about_slider_01.jpg`,
     },
     {
       id: 2,
-      src: "http://localhost:3000/images/introduce/about_slider_02.jpg",
+      src: `${domainApp}/images/introduce/about_slider_02.jpg`,
     },
     {
       id: 3,
-      src: "http://localhost:3000/images/introduce/about_slider_03.jpg",
+      src: `${domainApp}/images/introduce/about_slider_03.jpg`,
     },
     {
       id: 4,
-      src: "http://localhost:3000/images/introduce/about_slider_02.jpg",
+      src: `${domainApp}/images/introduce/about_slider_02.jpg`,
     },
     {
       id: 5,
-      src: "http://localhost:3000/images/introduce/about_slider_01.jpg",
+      src: `${domainApp}/images/introduce/about_slider_01.jpg`,
     },
     {
       id: 6,
-      src: "http://localhost:3000/images/introduce/about_slider_03.jpg",
+      src: `${domainApp}/images/introduce/about_slider_03.jpg`,
     },
   ];
 
@@ -83,7 +88,7 @@ const AlbumDetail = () => {
       <Backgroud bgSlide={bgSlide} title={imageAlbumList[idAlbum - 1].name} />
       {/* Backgroud component */}
       <div className="elementor-container">
-        <div className="gallery row">
+        <Masonry columns={3} spacing={1}>
           {imageAlbumList[idAlbum - 1].list.map((image, index) => (
             <div
               className="image-container col-md-4 col-sm-6"
@@ -104,15 +109,16 @@ const AlbumDetail = () => {
                       : "",
                 }}
               >
-                <img
-                  src={image}
-                  alt={`Image ${index}`}
+                <LazyLoadImage
                   className="album-detail-img"
+                  alt={`Image ${index}`}
+                  src={image}
                 />
+                {hoveredIndex === index && <div className="image-fade"></div>}
               </div>
             </div>
           ))}
-        </div>
+        </Masonry>
       </div>
       <CommonContext />
       {isOpen && (

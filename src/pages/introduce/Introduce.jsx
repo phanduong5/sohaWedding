@@ -13,39 +13,39 @@ import AlbumWending from "../common/album-wending/AlbumWending";
 import { domainApp } from "../../router/router";
 import CommonContext from "../common/commonContext/CommonContext";
 import DetailConsultation from "../common/detail-consultation/DetailConsultation";
-import AnhCuoiStudio from "../../assets/img/StylePhoto/Studio Photo/anhchonj.jpg"
-import AnhCuoiStudio_vespa from "../../assets/img/Abumle_ảnh_cươi/ảnh_studio_2/anhchon.jpg"
-import AnhCuoiDuongPho from "../../assets/img/StylePhoto/Studio anh vespa car photo/anhchon.jpg"
-import AnhCuoiStudioAoDai from "../../assets/img/StylePhoto/Studio and Ao Dai/Photochose.jpg"
-import AnhCuoiStudioNgoaiTroi from "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_hồ/anhchon.jpg"
-import AnhCuoiStudioNgoaiTroitoi from "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_ngoài_trời_tối/anhchon.jpg"
-import AnhCuoiPhimTruong from "../../assets/img/Abumle_ảnh_cươi/phimtruong1/anhchon.jpg"
-import AnhCuoiStudioNgoaiDuong from "../../assets/img/StylePhoto/Studio and Metro/PHOTOCHOSE.jpg"
+import AnhCuoiStudio from "../../assets/img/StylePhoto/Studio Photo/anhchonj.jpg";
+import AnhCuoiStudio_vespa from "../../assets/img/Abumle_ảnh_cươi/ảnh_studio_2/anhchon.jpg";
+import AnhCuoiDuongPho from "../../assets/img/StylePhoto/Studio anh vespa car photo/anhchon.jpg";
+import AnhCuoiStudioAoDai from "../../assets/img/StylePhoto/Studio and Ao Dai/Photochose.jpg";
+import AnhCuoiStudioNgoaiTroi from "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_hồ/anhchon.jpg";
+import AnhCuoiStudioNgoaiTroitoi from "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_ngoài_trời_tối/anhchon.jpg";
+import AnhCuoiPhimTruong from "../../assets/img/Abumle_ảnh_cươi/phimtruong1/anhchon.jpg";
+import AnhCuoiStudioNgoaiDuong from "../../assets/img/StylePhoto/Studio and Metro/PHOTOCHOSE.jpg";
 const Introduce = () => {
   const bgSlide = [
     {
       id: 1,
-      src: "http://localhost:3000/images/introduce/about_slider_01.jpg",
+      src: `${domainApp}/images/introduce/about_slider_01.jpg`,
     },
     {
       id: 2,
-      src: "http://localhost:3000/images/introduce/about_slider_02.jpg",
+      src: `${domainApp}/images/introduce/about_slider_02.jpg`,
     },
     {
       id: 3,
-      src: "http://localhost:3000/images/introduce/about_slider_03.jpg",
+      src: `${domainApp}/images/introduce/about_slider_03.jpg`,
     },
     {
       id: 4,
-      src: "http://localhost:3000/images/introduce/about_slider_02.jpg",
+      src: `${domainApp}/images/introduce/about_slider_02.jpg`,
     },
     {
       id: 5,
-      src: "http://localhost:3000/images/introduce/about_slider_01.jpg",
+      src: `${domainApp}/images/introduce/about_slider_01.jpg`,
     },
     {
       id: 6,
-      src: "http://localhost:3000/images/introduce/about_slider_03.jpg",
+      src: `${domainApp}/images/introduce/about_slider_03.jpg`,
     },
   ];
   const listIcon = [faFacebookF, faTwitter, faYoutube, faTiktok];
@@ -76,49 +76,49 @@ const Introduce = () => {
       id: 1,
       name: "ảnh cưới studio",
       //src: `${domainApp}/images/service/ảnh cưới studio.avif`,
-      src: AnhCuoiStudio
+      src: AnhCuoiStudio,
     },
     {
       id: 2,
       name: "ảnh cưới studio + xe vespa cổ",
       //src: `${domainApp}/images/service/ảnh cưới studio + xe vespa cổ.webp`,
-      src : AnhCuoiStudio_vespa
+      src: AnhCuoiStudio_vespa,
     },
     {
       id: 3,
       name: "ảnh cưới santorini + đường phố",
       //src: `${domainApp}/images/service/ảnh cưới santorini + đường phố.avif`,
-      src : AnhCuoiDuongPho
+      src: AnhCuoiDuongPho,
     },
     {
       id: 4,
       name: "ảnh Áo Dài + studio thứ 2",
       //src: `${domainApp}/images/service/ảnh cưới xe vespa + studio thứ 2.jpg`,
-      src : AnhCuoiStudioAoDai
+      src: AnhCuoiStudioAoDai,
     },
     {
       id: 5,
       name: "ảnh cưới studio ngoài trời",
       //src: `${domainApp}/images/service/ảnh cưới studio + ga tàu điện.jpg`,
-      src : AnhCuoiStudioNgoaiTroitoi
+      src: AnhCuoiStudioNgoaiTroitoi,
     },
     {
       id: 6,
       name: "ảnh cưới studio + hồ tây",
       //src: `${domainApp}/images/service/ảnh cưới studio + hồ tây.avif`,
-      src : AnhCuoiStudioNgoaiTroi
+      src: AnhCuoiStudioNgoaiTroi,
     },
     {
       id: 7,
       name: "ảnh cưới phim trường 5 garden + cafe",
       //src: `${domainApp}/images/service/ảnh cưới phim trường 5 garden + cafe.webp`,
-      src : AnhCuoiPhimTruong
+      src: AnhCuoiPhimTruong,
     },
     {
       id: 8,
       name: "ảnh cưới ngoài trời + áo dài vintage",
       //src: `${domainApp}/images/service/ảnh cưới studio + áo dài vintage.avif`,
-      src : AnhCuoiStudioNgoaiDuong
+      src: AnhCuoiStudioNgoaiDuong,
     },
   ];
   return (
@@ -163,7 +163,7 @@ const Introduce = () => {
                   photoshop ảnh và dựng video cưới hỏi; in thiệp cưới,…
                 </p>
                 <p>
-                SOHA WEDDING hiện có 2 chi nhánh tại Hà Nội, được trang bị đầy
+                  SOHA WEDDING hiện có 2 chi nhánh tại Hà Nội, được trang bị đầy
                   đủ cơ sở vật chất và trang thiết bị hiện đại, showroom váy
                   cưới mới với diện tích lên tới 500m2 với công năng 6 phòng váy
                   cưới đủ các dòng váy từ LUXURY đến BASIC, 2 phòng áo dài, 1
@@ -176,7 +176,7 @@ const Introduce = () => {
                   cưới đẹp và ưng ý nhất.{" "}
                 </p>
                 <p>
-                SOHA WEDDING tự tin là thương hiệu chụp ảnh cưới phong cách
+                  SOHA WEDDING tự tin là thương hiệu chụp ảnh cưới phong cách
                   Hàn Quốc chất lượng số 1 tại Hà Nội, luôn luôn cập nhật nhanh
                   chóng xu hướng ngành cưới trong và ngoài nước. Ngoài ra, SOHA
                   cũng luôn hỗ trợ và lắng nghe mong muốn của các cặp đôi để đưa
