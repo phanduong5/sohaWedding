@@ -14,12 +14,17 @@
 .image-container {
   position: relative;
   display: inline-block;
-  &-inner {
+  .album-detail-img {
     border-radius: 6px;
   }
-  &-inner:hover {
-    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.45),
-      0 50px 90px 0 rgba(51, 51, 51, 0.15);
+  .image-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
   }
 }
 
