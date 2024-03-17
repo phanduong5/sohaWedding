@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logoWeb from "../../../assets/img/logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,8 +8,20 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./header.scss";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
+import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter';
+import CloseIcon from '@mui/icons-material/Close';
+import {
+  faFacebookF,
+  faTwitter,
+  faYoutube,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
 const Header = () => {
+  const [menu_mobile, setMobile] = useState(1);
+  const listIcon = [faFacebookF, faTwitter, faYoutube, faTiktok];
+  const hanldShowMenuMobile = () => {
+    setMobile(cout => cout + 1);
+  }
   const boxContent = [
     {
       icon: faLocationDot,
@@ -81,7 +93,7 @@ const Header = () => {
     },
     {
       element: "Báo giá",
-      router: "",
+      router: "/bao+gia+chup+anh+cuoi",
       children: [
         {
           element: "Báo giá chụp ảnh cưới",
@@ -112,6 +124,7 @@ const Header = () => {
     },
   ];
 
+  console.log(menu_mobile);
   const location = useLocation();
   return (
     <div id="header" className="header">
@@ -133,6 +146,57 @@ const Header = () => {
             </div>
           ))}
         </div>
+        <div className="Menu_mobile">
+          <button onClick={hanldShowMenuMobile}><FormatAlignCenterIcon sx={{ fontSize: 50 }} /></button>
+        </div>
+        {menu_mobile % 2 === 0 && (
+          <span className="Menu_mobile_detail">
+            <ul>
+              <div className="Menu_head">
+                <img src={logoWeb} width={150} height={70} alt="logo_Menu_Mobile" />
+                <span onClick={hanldShowMenuMobile}><CloseIcon sx={{ fontSize: 50 }} /></span>
+              </div>
+              {menu.map((menuItem, indexItem) => (
+                <li key={indexItem}>
+                  <Link
+                    to={menuItem.router}
+                  >
+                    {menuItem.element}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="Line_Menu_Mobile"></div>
+            <div className="elementor-element d-flex mt-3 mb-3 pr-5">
+              {listIcon.map((item, index) => (
+                <div key={index} className="icon-menu_mobile">
+                  <FontAwesomeIcon icon={item} />
+                </div>
+              ))}
+            </div>
+            <div className="Line_Menu_Mobile"></div>
+            <div className="info_menu_mobile">
+              {boxContent.map((box, index) => (
+                <div
+                  key={index}
+                  className="info_menu_mobile_item d-flex align-items-center"
+                >
+                  <FontAwesomeIcon icon={box.icon} />
+                  <div className="info_menu_mobile_item-content">
+                    <span className="title">{box.title}</span>
+                    <p className="description">{box.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="Line_Menu_Mobile"></div>
+            <span className="button_menu_mobile">
+                <button className="button_menu_mobile_style">
+                <Link to={"/contact"}>Liên Hệ Ngay</Link>
+                </button>
+            </span>
+          </span>
+        )}
       </div>
       <div className="header-bottom d-flex">
         <div className="header-bottom-menu">
@@ -140,9 +204,8 @@ const Header = () => {
             {menu.map((menuItem, indexItem) => (
               <li key={indexItem} className="header-bottom-menu-item">
                 <Link
-                  className={`header-bottom-menu-item-link ${
-                    menuItem.router === location.pathname ? "active" : ""
-                  }`}
+                  className={`header-bottom-menu-item-link ${menuItem.router === location.pathname ? "active" : ""
+                    }`}
                   to={menuItem.router}
                 >
                   {menuItem.element}
@@ -150,12 +213,12 @@ const Header = () => {
                 <ul className="menu-child">
                   {menuItem.children && menuItem.children.length
                     ? menuItem.children.map((item, index) => (
-                        <li key={index}>
-                          <Link to={item.router} className="link-child" href="">
-                            {item.element}
-                          </Link>
-                        </li>
-                      ))
+                      <li key={index}>
+                        <Link to={item.router} className="link-child" href="">
+                          {item.element}
+                        </Link>
+                      </li>
+                    ))
                     : null}
                 </ul>
               </li>

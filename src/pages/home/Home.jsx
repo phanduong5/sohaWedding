@@ -7,7 +7,7 @@ import ContextHome from "../common/commonContext/CommonContext.jsx";
 import ServiceHome from "../common/commonService/CommonService.jsx";
 import "../home/home.scss";
 import Feedback from "../common/common_feedback/Feedback.jsx";
-import section2Img from "../../assets/img/introduce/home_04_image_02.avif";
+import section2Img from "../../assets/img/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,

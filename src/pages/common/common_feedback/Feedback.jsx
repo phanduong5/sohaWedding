@@ -1,6 +1,9 @@
 import { Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import demo from "../../../assets/img/16.webp"
+import demo1 from "../../../assets/img/photofeedback/432755174_303980326033530_4070618380651200291_n.jpg"
+import demo2 from "../../../assets/img/photofeedback/432759219_303980319366864_820972412787399389_n.jpg"
+import demo3 from "../../../assets/img/photofeedback/432775075_303980399366856_3652851992579687494_n.jpg"
+import demo4 from "../../../assets/img/photofeedback/432974865_303980322700197_6726792931494573821_n.jpg"
 import React from "react";
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -10,23 +13,19 @@ const Feedback = () => {
     const list = [
         {
             id: 1,
-            src: demo
+            src: demo1
         },
         {
             id: 2,
-            src: demo
+            src: demo2
         },
         {
             id: 3,
-            src: demo
+            src: demo3
         },
         {
             id: 4,
-            src: demo
-        },
-        {
-            id: 5,
-            src: demo
+            src: demo4
         },
     ]
     return (
