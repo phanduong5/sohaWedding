@@ -1,7 +1,4 @@
 import React from "react";
-import HeadContext from "../common/head/head.jsx"
-import MenuContext from "../common/tavbar/Navbar.jsx"
-import FooterContext from "../common/footer/Footer.jsx"
 import ContextContext from "../common/commonContext/CommonContext.jsx"
 import CallIcon from '@mui/icons-material/Call';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
@@ -14,9 +11,9 @@ const Contact = () => {
     <>
       <div className="container Contact">
         <div className="row">
-          <div className="col lg-6">
+          <div className="col-lg-6 col-sm-12">
             <span> LIÊN HỆ</span>
-            <h2>Gọi, Email Hoặc Nhắn Cho SOHA</h2>
+            <h1>Gọi, Email Hoặc Nhắn Cho SOHA</h1>
             <div className="container_Infomation">
               <div className="item_infomation">
                 <div className="icon_infamation"><FmdGoodIcon className="icon_contact" /> </div>
@@ -46,7 +43,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col lg-6">
+          <div className="col-lg-6 col-sm-12">
             <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(Soha%20Wedding)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
           </div>
         </div>
