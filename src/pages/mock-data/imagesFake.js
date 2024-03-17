@@ -51,3 +51,9 @@ export const imageAlbumDetail = () => {
 
   return [imageMap1, imageMap2, imageMap3, imageMap4, imageMap5, imageMap6];
 };
+
+const imagesGiaDinh = require.context("../../assets/img/anhGiaDinh", true);
+
+export const listImagesGiaDinh = imagesGiaDinh
+  .keys()
+  .map((image) => imagesGiaDinh(image));
