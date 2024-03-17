@@ -139,6 +139,24 @@ a {
   color: #000000;
 }
 
+.service-detail-p,
+.service-detail-li,
+.service-detail-strong {
+  font-weight: 400;
+  line-height: 1.8em;
+  font-size: 18px;
+  font-family: "Arsenal", Sans-serif;
+}
+
+.ul-1 {
+  list-style: disc;
+  margin: 0 0 27px 54px;
+}
+
+strong {
+  font-weight: 700;
+}
+
 // Import Swiper styles
 @import "swiper/css";
 @import "swiper/css/navigation";
