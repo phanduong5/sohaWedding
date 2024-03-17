@@ -17,7 +17,7 @@ import AlbumDetail from "../pages/album/AlbumDetail.jsx";
 import PriceAudio from "../pages/price/priceAudioWedding/priceAudio.jsx";
 import ServiceDetail from "../pages/service-detail/ServiceDetail.jsx";
 
-export const domainApp = "http://localhost:3000";
+export const domainApp = "https://sohawedding.com/";
 
 export const router = createBrowserRouter([
   {

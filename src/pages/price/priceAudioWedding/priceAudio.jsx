@@ -72,7 +72,7 @@ const PriceAudio = () => {
                     <img className="img_priceAudio" src={Phong_su1}/>
                 </div>
                 <div className="col">
-                    <img className="img_priceAudio" src={Phong_su2} />
+                    <img className="img_priceAudio" src={Phong_su2}/>
                 </div>
             </div>
             <div className="AlbumWending_priceAudio">
