@@ -1,6 +1,6 @@
 {
   "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "SOHA Wedding Studio - với sứ mệnh tạo ra những bộ ảnh cưới theo xu hương tinh tế , lãng mạn .",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,13 +8,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
+      "src": "logo192.jpg",
+      "type": "image/jpg",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
+      "src": "logo512.jpg",
+      "type": "image/jpg",
       "sizes": "512x512"
     }
   ],
