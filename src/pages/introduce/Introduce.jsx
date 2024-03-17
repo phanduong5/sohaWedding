@@ -1,7 +1,7 @@
 import React from "react";
 import "./introduce.scss";
 import Backgroud from "../common/backgroud/Backgroud";
-import section2Img from "../../assets/img/introduce/home_04_image_02.avif";
+import section2Img from "../../assets/img/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,

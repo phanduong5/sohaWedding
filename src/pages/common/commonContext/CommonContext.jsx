@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Flex } from "antd";
-import home_04_image_02 from "../../../assets/img/home_04_image_02.avif";
+import home_04_image_02 from "../../../assets/img/logo.png";
 import "./commonContext.scss";
 
 const CommonContext = () => {

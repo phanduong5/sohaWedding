@@ -96,7 +96,7 @@ const Album = () => {
         <AlbumWending
           albumAnhCuoi={albumAnhCuoi}
           title="5000+ CẶP ĐÔI TIN TƯỞNG LỰA CHỌN"
-          content="Thật tuyệt vời bởi JEJU WEDDING đã được hơn 5000 cặp đôi tin tưởng và lựa chọn đồng hành. Chúng mình luôn ở đây và lắng nghe điều bạn muốn, cố gắng hết mình ghi lại qua từng khoảnh khắc, từng cung bậc cảm xúc. Sẵn sàng thực hiện mọi mong muốn, mọi concept từ nhẹ nhàng, đơn giản đến sang trọng, độc đáo, dù là phong cách Hàn Quốc hay u Mỹ, hay chỉ là ảnh cưới truyền thống. Tại JEJU có đội ngũ nhiếp ảnh gia, designer, make-up artist chuyên nghiệp, trẻ trung, tận tâm với từng chi tiết trong album ảnh cưới để cho ra những album ảnh cưới hoàn hảo và hài lòng nhất với mỗi khách hàng."
+          content="Thật tuyệt vời bởi SOHA WEDDING đã được hơn 5000 cặp đôi tin tưởng và lựa chọn đồng hành. Chúng mình luôn ở đây và lắng nghe điều bạn muốn, cố gắng hết mình ghi lại qua từng khoảnh khắc, từng cung bậc cảm xúc. Sẵn sàng thực hiện mọi mong muốn, mọi concept từ nhẹ nhàng, đơn giản đến sang trọng, độc đáo, dù là phong cách Hàn Quốc hay u Mỹ, hay chỉ là ảnh cưới truyền thống. Tại SOHA có đội ngũ nhiếp ảnh gia, designer, make-up artist chuyên nghiệp, trẻ trung, tận tâm với từng chi tiết trong album ảnh cưới để cho ra những album ảnh cưới hoàn hảo và hài lòng nhất với mỗi khách hàng."
           pageIndex="Album"
         />
       </div>

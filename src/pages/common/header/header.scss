@@ -121,12 +121,122 @@
   }
 }
 
+.Menu_mobile{
+  margin-right: 40px;
+  display: inline-block;
+  button{
+   border: 0;
+   background-color: white;
+   display: inline-block;
+  }
+}
+
+.Menu_mobile_detail{
+  position: absolute;
+  z-index: 9999;
+  height: auto;
+  width: 70%;
+  background-color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  margin-top: -10px;
+  animation: slideIn 1s forwards;
+  display: inline-block;
+  ul{
+    li{
+      margin: 1.5rem 0.5rem ;
+      //border: 1px solid black;
+      font-family: "Arsenal", Sans-serif;
+      a{
+        color: white;
+      }
+    }
+    li a:hover{
+      color: #000000;
+    }
+    li:hover{
+      border-radius: 10px;
+      background-color: #fcdede;
+      padding: 0.5rem 0.5rem;
+    }
+  }
+}
+.Menu_head{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  margin-bottom: 30px !important;
+}
+.Line_Menu_Mobile{
+  border-bottom: 1px solid white;
+}
+.icon-menu_mobile{
+  svg {
+    fill: #fcdede;
+    color: #fcdede;
+    border-color: #fcdede;
+    font-size: 30px;
+  }
+}
+.info_menu_mobile{
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  &_item{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    svg {
+      fill: #fcdede;
+      color: #fcdede;
+      border-color: #fcdede;
+      font-size: 30px;
+    }
+    &-content{
+      margin-left: 20px;
+      .title{
+        color: white;
+      }
+      .description{
+        font-size: 1.0rem;
+        color: white;
+        
+      }
+    }
+  }
+}
+.button_menu_mobile{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  &_style{
+    background-color: #fcdede;
+    padding: 0.7rem;
+    border-radius: 10px;
+  }
+}
+@keyframes slideIn {
+  from {
+    left: -100px; /* Đi từ ngoài màn hình */
+  }
+  to {
+    left: 0; /* Di chuyển đến vị trí ban đầu */
+  }
+}
 /*Mobile resolution */
 @media only screen and (max-width: 767px) {
   .header-top-info,
   .header-bottom {
     display: none !important;
   }
+  .Menu_mobile{
+    display: flex !important;
+  }
+  .header-top{
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }
 
 /* Tablet resolution */
@@ -135,8 +245,18 @@
   .header-bottom {
     display: none !important;
   }
+  .Menu_mobile{
+    display: flex !important;
+  }
+  .header-top{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* > PC low resolution */
 @media (min-width: 1025px) {
+  .Menu_mobile{
+    display: none !important;
+  }
 }
