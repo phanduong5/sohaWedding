@@ -18,6 +18,7 @@ import PriceAudio from "../pages/price/priceAudioWedding/priceAudio.jsx";
 import ServiceDetail from "../pages/service-detail/ServiceDetail.jsx";
 
 export const domainApp = "https://sohawedding.com/";
+  
 
 export const router = createBrowserRouter([
   {
