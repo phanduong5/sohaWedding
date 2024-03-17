@@ -3,21 +3,21 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import Album from "../pages/album/Album";
-import Contact from "../pages/contact/Contact";
-import Endow from "../pages/endow/Endow";
-import Home from "../pages/home/Home";
-import Introduce from "../pages/introduce/Introduce";
-import News from "../pages/news/News";
-import Price from "../pages/price/pricePhotoWedding/Price";
-import Service from "../pages/service/Service";
-import NotFound from "../pages/not-found/NotFound";
-import Layout from "../Layout";
-import AlbumDetail from "../pages/album/AlbumDetail";
-import PriceAudio from "../pages/price/priceAudioWedding/priceAudio";
-import ServiceDetail from "../pages/service-detail/ServiceDetail";
+import Album from "../pages/album/Album.jsx";
+import Contact from "../pages/contact/Contact.jsx";
+import Endow from "../pages/endow/Endow.jsx";
+import Home from "../pages/home/Home.jsx";
+import Introduce from "../pages/introduce/Introduce.jsx";
+import News from "../pages/news/News.jsx";
+import Price from "../pages/price/pricePhotoWedding/Price.jsx";
+import Service from "../pages/service/Service.jsx";
+import NotFound from "../pages/not-found/NotFound.jsx";
+import Layout from "../Layout.jsx";
+import AlbumDetail from "../pages/album/AlbumDetail.jsx";
+import PriceAudio from "../pages/price/priceAudioWedding/priceAudio.jsx";
+import ServiceDetail from "../pages/service-detail/ServiceDetail.jsx";
 
-export const domainApp = "http://localhost:3000";
+export const domainApp = "https://sohawedding.com/";
 
 export const router = createBrowserRouter([
   {

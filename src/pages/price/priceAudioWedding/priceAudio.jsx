@@ -69,10 +69,10 @@ const PriceAudio = () => {
             <span>Các gói chụp phóng sự cưới đã bao gồm chụp truyền thống đầy đủ các lễ nghi, kết hợp chụp nhiều khoảnh khắc tự nhiên, ghi lại cảm xúc chân thật trong ngày trọng đại của Cô dâu Chú rể.</span>
             <div className="row">
                 <div className="col">
-                    <img className="img_priceAudio" src={Phong_su1}></img>
+                    <img className="img_priceAudio" src={Phong_su1}/>
                 </div>
                 <div className="col">
-                    <img className="img_priceAudio" src={Phong_su2} />
+                    <img className="img_priceAudio" src={Phong_su2}/>
                 </div>
             </div>
             <div className="AlbumWending_priceAudio">
