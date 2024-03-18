@@ -86,6 +86,10 @@ export const router = createBrowserRouter([
         element: <ServiceDetail />,
       },
       {
+        path: "dich-vu-thiep-cuoi",
+        element: <ServiceDetail />,
+      },
+      {
         path: "dich-vu-dao-tao-nghe",
         element: <ServiceDetail />,
       },
@@ -95,7 +99,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/",
-        element: <Navigate to="/introduce" />,
+        element: <Navigate to="/home" />,
       },
     ],
   },

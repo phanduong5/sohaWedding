@@ -80,6 +80,11 @@ const Header = () => {
           children: [],
         },
         {
+          element: "Dịch vụ thiệp cưới",
+          router: "/dich-vu-thiep-cuoi",
+          children: [],
+        },
+        {
           element: "Dịch vụ đào tạo nghề",
           router: "/dich-vu-dao-tao-nghe",
           children: [],
