@@ -198,7 +198,7 @@ const Header = () => {
           </span>
         )}
       </div>
-      <div className="header-bottom d-flex">
+      <div className="header-bottom">
         <div className="header-bottom-menu">
           <ul className="header-bottom-menu-ul">
             {menu.map((menuItem, indexItem) => (
