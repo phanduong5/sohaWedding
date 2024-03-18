@@ -19,25 +19,25 @@ const Price = () => {
     [Photo5, Photo6],
     [Photo7, Photo8],
     [Photo9, Photo10],
-    [Photo11 , ""],
+    [Photo11, ""],
   ]
- 
+
   const handTakePhoto = (list) => {
     return list.map((photos, index) => (
-      <div key={index} className={"col lg-6 parent"}>
-          <img key={index} className="photo_price" src={photos} />
+      <div key={index} className={"col-lg-6 col-sm-12 parent"}>
+        <img key={index} className="photo_price" src={photos} />
       </div>
     ));
   };
   return <>
     <div className="container price">
-      <h1>BẢNG GIÁ CHỤP ẢNH CƯỚI</h1>
-      <div className="LinePrice"></div>
-      <span>SOHA luôn là đơn vị dẫn đầu xu hướng ảnh cưới ở thị trường Hà Nội với đa dạng các phong cách từ trẻ trung, tinh tế đến sang trọng, lộng lẫy,...</span>
-      <span>Đặc biệt hơn, SOHA Wedding đã nghiên cứu và đưa ra các gói dịch vụ với mức giá cực tốt, bao gồm nhiều dịch vụ trọn gói giúp cho chi phí ngày cưới của Cô dâu Chú rể không bị phát sinh thêm nhiều.</span>
-      <div className="Box_Price">
+      <div className="elementor container">
+        <h1>BẢNG GIÁ CHỤP ẢNH CƯỚI</h1>
+        <div className="LinePrice"></div>
+        <span>SOHA luôn là đơn vị dẫn đầu xu hướng ảnh cưới ở thị trường Hà Nội với đa dạng các phong cách từ trẻ trung, tinh tế đến sang trọng, lộng lẫy,...</span>
+        <span>Đặc biệt hơn, SOHA Wedding đã nghiên cứu và đưa ra các gói dịch vụ với mức giá cực tốt, bao gồm nhiều dịch vụ trọn gói giúp cho chi phí ngày cưới của Cô dâu Chú rể không bị phát sinh thêm nhiều.</span>
         <div className="item_price">
-          {list.map((element) =>(
+          {list.map((element) => (
             <div className="row ">{handTakePhoto(element)} </div>
           ))
           }

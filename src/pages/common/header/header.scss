@@ -41,6 +41,7 @@
     }
   }
   &-bottom {
+    display: flex;
     margin-top: 12px;
     &-menu {
       flex-grow: 1;

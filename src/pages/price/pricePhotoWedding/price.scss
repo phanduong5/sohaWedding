@@ -17,6 +17,10 @@
         margin-bottom: 100px;
         display: grid;
         place-items: center;
+    }
+}
+.elementor{
+    &.container{
         h1{
             display: flex;
             justify-content: center;
@@ -41,6 +45,5 @@
         span:last-of-type {
             margin-bottom: 70px;
           }
-
     }
 }
