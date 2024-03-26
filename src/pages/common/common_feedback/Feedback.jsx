@@ -41,8 +41,19 @@ const Feedback = () => {
             <div className="detail_feedback">
                 <Swiper
                     // install Swiper modules
+                    slidesPerView = {1}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                          },
+                          768: {
+                            slidesPerView: 2,
+                          },
+                          1024: {
+                            slidesPerView: 3,
+                          },
+                      }}
                     modules={[Pagination, Autoplay]}
-                    slidesPerView={3}
                     autoplay={{
                         delay: 3000,
                         disableOnInteraction: false,
@@ -53,7 +64,7 @@ const Feedback = () => {
                         <SwiperSlide key={item.id}>
                             <div
                                 style={{ backgroundImage: `url(${item.src})` }}
-                                className="background-swipper-show"
+                                className="background-swipper-feedback"
                             ></div>
                         </SwiperSlide>
                     ))}

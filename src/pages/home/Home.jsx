@@ -160,9 +160,7 @@ const Home = () => {
       <section className="service-section service-section-4">
         <DetailConsultation />
       </section>
-      <div className="Feedback_Home">
-        <Feedback />
-      </div>
+      <Feedback />
       <ContextHome />
     </div>
   );
