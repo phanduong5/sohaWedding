@@ -4,11 +4,11 @@
     position: relative;
     .photo_price{
         position: absolute;
-        width: 100%;
-        height: auto;
+        width: 98%;
+        height: 98%;
         top: 0;
         left: 0;
-        padding: 0px 12px;
+        padding: 12px 12px;
     }
 }
 .container{
@@ -31,13 +31,15 @@
         }
         .LinePrice{
             border-bottom: 1px solid #fcdede;
-            width: 200px;
             margin-top: 40px;
             margin-bottom: 50px;
         }
         span{
             font-weight: 400;
             text-align: center;
+            display: inline;
+            justify-content: center;
+            align-items: center;
             font-family: "Arsenal", Sans-serif;
             font-size: 20px;
             line-height: 1.5
