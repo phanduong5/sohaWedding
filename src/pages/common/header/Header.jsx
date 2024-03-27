@@ -129,7 +129,6 @@ const Header = () => {
     },
   ];
 
-  console.log(menu_mobile);
   const location = useLocation();
   return (
     <div id="header" className="header">
