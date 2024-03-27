@@ -3,10 +3,11 @@
         width: 400px;
         height: 650px;
         position: relative;
+        cursor: pointer;
         img{
             display: block;
             width: 100%;
-            height: 90%;
+            height: auto;
         }
         .Text_Service{
             background-color: black;
