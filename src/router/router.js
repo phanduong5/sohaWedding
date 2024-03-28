@@ -16,6 +16,7 @@ import Layout from "../Layout.jsx";
 import AlbumDetail from "../pages/album/AlbumDetail.jsx";
 import PriceAudio from "../pages/price/priceAudioWedding/priceAudio.jsx";
 import ServiceDetail from "../pages/service-detail/ServiceDetail.jsx";
+import ServiceDetailHome from "../pages/common/commonService/ServiceDetailHome.jsx";
 
 export const domainApp = "https://sohawedding.com/";
   
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
       {
         path: "album-detail",
         element: <AlbumDetail />,
+      },
+      {
+        path: "service-detail",
+        element: <ServiceDetailHome/>
       },
       {
         path: "contact",
