@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logoWeb from "../../../assets/img/logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,12 +16,35 @@ import {
   faYoutube,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { ConnextFacebook, ConnextNull, ConnextTiTok } from "../connextInternerPublic/connext";
 const Header = () => {
   const [menu_mobile, setMobile] = useState(1);
+  const [showDropDown, setShowDropDown] = useState("");
+  const [iconMobile, setIconMobile] = useState("");
   const listIcon = [faFacebookF, faTwitter, faYoutube, faTiktok];
-  const hanldShowMenuMobile = () => {
-    setMobile(cout => cout + 1);
+  const hanldShowMenuMobile = (value) => {
+    setShowDropDown(value)
+    if(showDropDown===value){
+      setShowDropDown("")
+    }
+    if(value==="Báo giá"||value=="Dịch vụ"){
+      setMobile(cout => cout)
+    }else{
+      setMobile(cout => cout + 1);
+    }
+
   }
+  useEffect(() => {
+    switch (iconMobile) {
+      case faFacebookF: ConnextFacebook()
+        break;
+      case faTiktok: ConnextTiTok()
+        break;
+      default: ConnextNull()
+        break
+    }
+  });
   const boxContent = [
     {
       icon: faLocationDot,
@@ -161,19 +184,31 @@ const Header = () => {
                 <span onClick={hanldShowMenuMobile}><CloseIcon sx={{ fontSize: 50 }} /></span>
               </div>
               {menu.map((menuItem, indexItem) => (
-                <li key={indexItem}>
+                <li key={indexItem} onClick={() =>hanldShowMenuMobile(menuItem.element)}>
                   <Link
                     to={menuItem.router}
                   >
                     {menuItem.element}
                   </Link>
+                  {menuItem.element==="Báo giá"||menuItem.element=="Dịch vụ" ? <ArrowDropDownIcon/> :null}
+                  <ul className="menu-child-mobile">
+                    {showDropDown===menuItem.element&&menuItem.children && menuItem.children.length
+                      ? menuItem.children.map((item, index) => (
+                        <li key={index} onClick={() =>hanldShowMenuMobile(item.element)}>
+                          <Link to={item.router} className="link-child-mobile" href="">
+                            {item.element}
+                          </Link>
+                        </li>
+                      ))
+                      : null}
+                  </ul>
                 </li>
               ))}
             </ul>
             <div className="Line_Menu_Mobile"></div>
-            <div className="elementor-element d-flex mt-3 mb-3 pr-5">
+            <div className="elementor-element d-flex mt-3 mb-3">
               {listIcon.map((item, index) => (
-                <div key={index} className="icon-menu_mobile">
+                <div onClick={() => setIconMobile(item)} key={index} className="icon-menu_mobile">
                   <FontAwesomeIcon icon={item} />
                 </div>
               ))}
@@ -194,10 +229,10 @@ const Header = () => {
               ))}
             </div>
             <div className="Line_Menu_Mobile"></div>
-            <span className="button_menu_mobile">
-                <button className="button_menu_mobile_style">
+            <span className="button_menu_mobile" onClick={hanldShowMenuMobile}>
+              <button className="button_menu_mobile_style">
                 <Link to={"/contact"}>Liên Hệ Ngay</Link>
-                </button>
+              </button>
             </span>
           </span>
         )}

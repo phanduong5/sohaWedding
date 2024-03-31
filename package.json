@@ -29,7 +29,7 @@
     "sass": "^1.69.7",
     "swiper": "^11.0.7",
     "web-vitals": "^2.1.4",
-    "yet-another-react-lightbox": "^3.17.1"
+    "yet-another-react-lightbox": "^3.17.2"
   },
   "scripts": {
     "start": "react-scripts start",

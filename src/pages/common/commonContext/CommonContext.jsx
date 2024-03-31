@@ -52,7 +52,7 @@ const CommonContext = () => {
       </div>
       <div className="elementor-container">
         <div className="elementor-container-check">
-          <div className="d-flex">
+          <div className="d-flex mobile">
             <div className="elementor-container-check-left">
               <div className="elementor-widget-container">
                 <img

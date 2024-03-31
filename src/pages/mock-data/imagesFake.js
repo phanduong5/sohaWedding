@@ -53,7 +53,40 @@ export const imageAlbumDetail = () => {
 };
 
 const imagesGiaDinh = require.context("../../assets/img/anhGiaDinh", true);
-
 export const listImagesGiaDinh = imagesGiaDinh
   .keys()
   .map((image) => imagesGiaDinh(image));
+
+
+//import test from "../../assets/img/serviceHome/PhotoWedding"
+const imagesWeddingPress = require.context("../../assets/img/serviceHome/choThue Vay", true);
+export const listImagesWeddingPress = imagesWeddingPress
+  .keys()
+  .map((image) => imagesWeddingPress(image));
+
+const PhotoWedding = require.context("../../assets/img/serviceHome/PhotoWedding", true);
+export const listPhotoWedding = PhotoWedding
+  .keys()
+  .map((image) => PhotoWedding(image));
+
+const PhotoMakeUp = require.context("../../assets/img/serviceHome/makeup", true);
+export const listPhotoMake = PhotoMakeUp
+  .keys()
+  .map((image) => PhotoMakeUp(image));
+
+const PhotoTraining = require.context("../../assets/img/serviceHome/daotaonghe", true);
+export const listPhotoTraining = PhotoTraining
+  .keys()
+  .map((image) => PhotoTraining(image));
+
+const CardWedding = require.context("../../assets/img/serviceHome/thiepcuoi", true);
+export const listCardWedding = CardWedding
+  .keys()
+  .map((image) => CardWedding(image));
+
+const PhotoVideoWeddingDay = require.context("../../assets/img/serviceHome/phóng_sự", true);
+export const listPhotoVideoWeddingDay = PhotoVideoWeddingDay
+    .keys()
+    .map((image) => PhotoVideoWeddingDay(image));
+
+

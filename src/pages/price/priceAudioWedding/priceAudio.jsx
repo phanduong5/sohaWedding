@@ -1,5 +1,5 @@
-import Phong_su1 from "../../../assets/img/phóng_sự/chụp_phong_sư.jpg"
-import Phong_su2 from "../../../assets/img/phóng_sự/quay_phong_su.jpg"
+import Phong_su1 from "../../../assets/img/GiaPhongSu/chụp_phong_sư.jpg"
+import Phong_su2 from "../../../assets/img/GiaPhongSu/quay_phong_su.jpg"
 import AnhCuoiStudio from "../../../assets/img/StylePhoto/Studio Photo/anhchonj.jpg"
 import AnhCuoiStudio_vespa from "../../../assets/img/Abumle_ảnh_cươi/ảnh_studio_2/anhchon.jpg"
 import AnhCuoiDuongPho from "../../../assets/img/StylePhoto/Studio anh vespa car photo/anhchon.jpg"
@@ -11,6 +11,7 @@ import AnhCuoiStudioNgoaiDuong from "../../../assets/img/StylePhoto/Studio and M
 import "./priceAudio.scss"
 import AlbumWending from "../../common/album-wending/AlbumWending"
 import "../../service/service.scss"
+import Contact from "../../common/commonContext/CommonContext"
 const PriceAudio = () => {
     const albumAnhCuoi = [
         {
@@ -63,7 +64,7 @@ const PriceAudio = () => {
         },
     ];
     return (
-        <div className="container priceAudio">
+        <div className="container priceAudio introduce service">
             <h1>BẢNG GIÁ PHÓNG SỰ CƯỚI</h1>
             <div className="LinePrice"></div>
             <span>Các gói chụp phóng sự cưới đã bao gồm chụp truyền thống đầy đủ các lễ nghi, kết hợp chụp nhiều khoảnh khắc tự nhiên, ghi lại cảm xúc chân thật trong ngày trọng đại của Cô dâu Chú rể.</span>
@@ -83,6 +84,7 @@ const PriceAudio = () => {
                 hiện đại"
                 />
             </div>
+            <Contact/>
         </div>
     );
 };
