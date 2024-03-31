@@ -1,0 +1,51 @@
+ .parent{
+    width:700px ;
+    height: 980px;
+    position: relative;
+    .photo_price{
+        position: absolute;
+        width: 98%;
+        height: 98%;
+        top: 0;
+        left: 0;
+        padding: 12px 12px;
+    }
+}
+.container{
+    &.price{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: grid;
+        place-items: center;
+    }
+}
+.elementor{
+    &.container{
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            font-weight: 400;
+            font-family: "Arsenal", Sans-serif;
+        }
+        .LinePrice{
+            border-bottom: 1px solid #fcdede;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+        span{
+            font-weight: 400;
+            text-align: center;
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            font-family: "Arsenal", Sans-serif;
+            font-size: 20px;
+            line-height: 1.5
+        }
+        span:last-of-type {
+            margin-bottom: 70px;
+          }
+    }
+}

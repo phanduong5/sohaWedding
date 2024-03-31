@@ -1,0 +1,33 @@
+.album {
+  &-detail {
+    padding: 60px 0;
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+    .elementor-container {
+      padding: 60px 0;
+    }
+  }
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  .album-detail-img {
+    border-radius: 6px;
+  }
+  .image-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+  }
+}
+
+.hovered {
+  z-index: 1;
+}

@@ -1,0 +1,32 @@
+.Cange {
+    margin-bottom: 150px;
+}
+.img_home{
+    width: 400px;
+    height: auto;
+}
+.col,.textHome {
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+.line{
+    border-bottom: 1px solid black;
+    margin-top: 50px;
+}
+.Box_Context{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .Button_context{
+        background-color: #fcdede;
+        border: 0px;
+        padding: 5px 5px;
+    }
+    .icon_Context{
+       .icon_Context_item{
+        margin-right: 20px;
+       }
+    }
+}

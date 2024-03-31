@@ -1,0 +1,37 @@
+.container {
+    &.Contact {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+.container_Infomation {
+    .item_infomation {
+        display: flex;
+        justify-content: left;
+        margin-top: 5px;
+        .icon_infamation {
+            margin-right: 10px;
+        }
+    }
+}
+
+.line_Contact {
+    border-bottom: 1px solid black;
+    margin-top: 50px;
+}
+.icon_Context{
+    color: rgb(255, 167, 95);
+}
+.text-detail-Context{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 990px) {
+    .col-lg-6{
+        &.col-sm-12{
+            margin-top: 30px;
+        }
+    }
+  }
