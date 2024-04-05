@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Flex } from "antd";
 import home_04_image_02 from "../../../assets/img/logo.png";
 import "./commonContext.scss";
+import { Link } from "react-router-dom";
 
 const CommonContext = () => {
   return (
@@ -76,7 +77,7 @@ const CommonContext = () => {
                 </div>
               </div>
               <div className="button col-md-3 d-flex justify-content-center">
-                <Button type="primary">LIÊN HỆ TƯ VẤN</Button>
+                <Button type="primary"><Link to={"/contact"}>LIÊN HỆ TƯ VẤN</Link></Button>
               </div>
             </div>
           </div>

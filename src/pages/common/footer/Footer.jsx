@@ -18,8 +18,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
-        <div className="row ">
-          <div className="col-sm-12 col-lg-3">
+        <div className="row align-items-start">
+          <div className="col-12 col-md-3">
             <div>
               <img className="ImageFooter" src={ImageLogo}></img>
             </div>
@@ -29,9 +29,6 @@ const Footer = () => {
               </div>
               <div>
                 <YouTubeIcon className="footerIcon" />
-              </div>
-              <div className="col-sm-8">
-                <i class="fab fa-tiktok"></i>
               </div>
             </div>
             <div className="titleFooter">
@@ -49,7 +46,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6 col-lg-3 text-start">
+          <div className="col-5 col-md-3 text-start">
             <ul>
               <li>
                 <p className="HeadTitle">Links</p>
@@ -111,7 +108,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-sm-6 col-lg-3 text-start">
+          <div className="col-5 col-md-3 text-start">
             <ul>
               <li>
                 <p className="HeadTitle">Dịch Vụ</p>
@@ -173,7 +170,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-sm-12 col-lg-3 text-start">
+          <div className="col-12 col-md-3 text-start">
             <ul>
               <li>
                 <p className="HeadTitle">Liên Hệ</p>

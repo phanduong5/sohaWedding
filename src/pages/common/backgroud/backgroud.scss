@@ -1,11 +1,13 @@
 .background {
   position: relative;
+
   &-swipper {
     &-show {
       width: 100%;
       height: 500px;
       background-position: 50%;
       background-size: cover;
+
       &.home {
         height: 800px;
         background-position: 50%;
@@ -13,6 +15,7 @@
       }
     }
   }
+
   &-content {
     position: absolute;
     z-index: 1;
@@ -25,6 +28,7 @@
     background-color: #fcdede57;
     color: #fff;
     border-radius: 8px;
+
     img {
       margin-bottom: 20px;
     }
@@ -37,13 +41,20 @@
     .background-content {
       width: 95%;
     }
+
+    &-swipper {
+      &-show {
+        &.home {
+          width: auto;
+          height: 20em;
+        }
+      }
+    }
   }
 }
 
 /* Tablet resolution */
-@media (min-width: 768px) and (max-width: 1024px) {
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* > PC low resolution */
-@media (min-width: 1025px) {
-}
+@media (min-width: 1025px) {}
