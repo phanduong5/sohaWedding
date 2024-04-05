@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ImageMove from "../common/backgroud/Backgroud.jsx";
 import ImageOne from "../../assets/img/anhchay1.jpg";
 import ImageTwo from "../../assets/img/anhchay2.jpg";
@@ -26,8 +26,20 @@ import AnhCuoiStudioNgoaiTroi from "../../assets/img/Abumle_ảnh_cươi/ảnh_c
 import AnhCuoiStudioNgoaiTroitoi from "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_ngoài_trời_tối/anhchon.jpg"
 import AnhCuoiPhimTruong from "../../assets/img/Abumle_ảnh_cươi/phimtruong1/anhchon.jpg"
 import AnhCuoiStudioNgoaiDuong from "../../assets/img/StylePhoto/Studio and Metro/PHOTOCHOSE.jpg"
+import { ConnextFacebook, ConnextNull, ConnextTiTok } from "../common/connextInternerPublic/connext.jsx";
 
 const Home = () => {
+  const [icon, setIcon] = useState(""); 
+  useEffect(() =>{
+    switch(icon){
+      case faFacebookF: ConnextFacebook()
+      break;
+      case faTiktok: ConnextTiTok()
+      break;
+      default: ConnextNull()
+      break
+    }
+  },[icon]);
   const listImage = [
     {
       id: 1,
@@ -137,7 +149,7 @@ const Home = () => {
               </div>
               <div className="elementor-element d-flex mt-4">
                 {listIcon.map((item, index) => (
-                  <div key={index} className="icon-item">
+                  <div onClick={() =>setIcon(item)} key={index} className="icon-item">
                     <FontAwesomeIcon icon={item} />
                   </div>
                 ))}

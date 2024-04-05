@@ -144,7 +144,7 @@
   display: inline-block;
   ul{
     li{
-      margin: 1.5rem 0.5rem ;
+      margin: 1.5rem 2.5rem ;
       //border: 1px solid black;
       font-family: "Arsenal", Sans-serif;
       a{
@@ -152,12 +152,7 @@
       }
     }
     li a:hover{
-      color: #000000;
-    }
-    li:hover{
-      border-radius: 10px;
-      background-color: #fcdede;
-      padding: 0.5rem 0.5rem;
+      color: #fcdede;
     }
   }
 }
@@ -167,6 +162,16 @@
   background-color: white;
   align-items: center;
   margin-bottom: 30px !important;
+  img{
+    margin-left: 15px;
+  }
+}
+.menu-child-mobile{
+  li{
+    a{
+      font-size: 1.0rem;
+    }
+  }
 }
 .Line_Menu_Mobile{
   border-bottom: 1px solid white;
@@ -216,6 +221,9 @@
     border-radius: 10px;
   }
 }
+.icon-menu_mobile{
+  padding-left: 2rem;
+}
 @keyframes slideIn {
   from {
     left: -100px; /* Đi từ ngoài màn hình */
@@ -225,6 +233,20 @@
   }
 }
 /*Mobile resolution */
+// @media only screen and (max-width: 767px) {
+//   .header-top-info,
+//   .header-bottom {
+//     display: none !important;
+//   }
+//   .Menu_mobile{
+//     display: flex !important;
+//   }
+//   .header-top{
+//     display: flex;
+//     justify-content: space-between;
+//   }
+  
+// }
 @media only screen and (max-width: 767px) {
   .header-top-info,
   .header-bottom {
@@ -236,8 +258,31 @@
   .header-top{
     display: flex;
     justify-content: space-between;
+    &-logo{
+      padding-left: 20px;
+    }
   }
-  
+  .Menu_mobile{
+    margin-right: 20px;
+  }
+  .Menu_mobile_detail{
+    font-size: 14px;
+    width: 80%;
+  }
+  .menu-child-mobile{
+    li a{
+      font-size: 14px;
+    }
+  }
+  .info_menu_mobile_item-content{
+    span{
+      font-size: 14px !important;
+    }
+    p{
+      font-size: 14px !important;
+    }
+  }
+
 }
 
 /* Tablet resolution */

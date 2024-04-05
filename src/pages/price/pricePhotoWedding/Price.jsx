@@ -11,6 +11,7 @@ import Photo9 from "../../../assets/img/báo_giá_chụp/full_day.jpg"
 import Photo10 from "../../../assets/img/báo_giá_chụp/luxury.jpg"
 import Photo11 from "../../../assets/img/báo_giá_chụp/all in.jpg"
 import "./price.scss"
+import ServiceHome from "../../common/commonService/CommonService"
 import Contact from "../../common/commonContext/CommonContext"
 const Price = () => {
   const list = [
@@ -30,7 +31,7 @@ const Price = () => {
     ));
   };
   return <>
-    <div className="container price">
+    <div className="container price introduce service">
       <div className="elementor container ">
         <h1>BẢNG GIÁ CHỤP ẢNH CƯỚI</h1>
         <div className="LinePrice"></div>
@@ -43,6 +44,7 @@ const Price = () => {
           } */}
         </div>
       </div>
+      <ServiceHome />
           <Contact/>
     </div>
   </>;

@@ -46,3 +46,16 @@
     }
   }
 }
+@media only screen and (max-width: 800px) {
+  .d-flex {
+    &.mobile{
+      display: grid !important;
+      grid-template-columns: 1fr;
+      margin: 0;
+      justify-items: center;
+    }
+  }
+  .elementor-container-check-left{
+    width: 100%;
+  }
+}

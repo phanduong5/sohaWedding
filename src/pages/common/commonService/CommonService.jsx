@@ -1,14 +1,14 @@
 import CommonCard from "../commonService/CommonImage/CommonImage.jsx";
-import Cinemactor from "../../../assets/img/chupanhCuoi/chupanhcuoi3.jpg";
-import WeddingDress from "../../../assets/img/choThue Vay/chothuevaycuoi3.jpg";
-import WeddingDayPhotography from "../../../assets/img/chụpphongsu/chup-anh-hon-phoi-nha-tho-giao-xu-binh-minh-quan-8-5-400x600.jpg";
-import makeUpBride from "../../../assets/img/makeup/424811532_278240765274153_3281912500957077583_n.jpg";
-import VocationalTraining from "../../../assets/img/daotaonghe/421671014_273502232414673_7906706037234426939_.jpg";
-import CardWedding from "../../../assets/img/thiepcuoi/in-thiep-cuoi-theo-yeu-cau-20220520003.jpg";
+import PhotoWedding from "../../../assets/img/serviceHome/PhotoWeddingHome.jpg";
+import WeddingDress from "../../../assets/img/serviceHome/WeddingDressHome.jpg";
+import WeddingDayPhotography from "../../../assets/img/serviceHome/PhotoVideoWeddingDayHome.jpg";
+import makeUpBride from "../../../assets/img/serviceHome/Make-upHome.jpg";
+import VocationalTraining from "../../../assets/img/serviceHome/PhotoTrainingHome.jpg";
+import CardWedding from "../../../assets/img/serviceHome/CardWeddingHome.jpg";
 import "./commonService.scss";
 const CommonService = () => {
   return (
-    <div className="container d-flex justify-content-center align-items-center">
+    <div className="container d-flex justify-content-center align-items-center service">
       <div className="container_commonService">
         <div className="elementor-container">
           <div className="service-section-header ">
@@ -28,7 +28,7 @@ const CommonService = () => {
         <div>
           <div className="row">
             <div className="col d-flex justify-content-center align-items-center">
-              <CommonCard image={Cinemactor} text={"CHỤP ẢNH CƯỚI"} />
+              <CommonCard image={PhotoWedding} text={"CHỤP ẢNH CƯỚI"} />
             </div>
             <div className="col d-flex justify-content-center align-items-center">
               <CommonCard image={WeddingDress} text={"THUÊ VÁY CƯỚI"} />
