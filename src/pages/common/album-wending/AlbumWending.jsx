@@ -27,7 +27,7 @@ const AlbumWending = ({ title, content, albumAnhCuoi, pageIndex }) => {
                 pageIndex == "Album" ? "col-md-4" : "col-md-3"
               } col-sm-6 col-12`}
               onClick={() => {
-                navigateWithParams("album-detail", { id: album.id });
+                navigateWithParams("album-detail", { id: album.id});
               }}
             >
               <img
