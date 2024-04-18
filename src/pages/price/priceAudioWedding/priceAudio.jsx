@@ -1,5 +1,5 @@
-import Phong_su1 from "../../../assets/img/GiaPhongSu/chụp_phong_sư.jpg"
-import Phong_su2 from "../../../assets/img/GiaPhongSu/quay_phong_su.jpg"
+import Phong_su1 from "../../../assets/img/GiaPhongSu/photoPhongSu.jpg"
+import Phong_su2 from "../../../assets/img/GiaPhongSu/videoPhongSu.jpg"
 import AnhCuoiStudio from "../../../assets/img/StylePhoto/Studio Photo/anhchonj.jpg"
 import AnhCuoiStudio_vespa from "../../../assets/img/Abumle_ảnh_cươi/ảnh_studio_2/anhchon.jpg"
 import AnhCuoiDuongPho from "../../../assets/img/StylePhoto/Studio anh vespa car photo/anhchon.jpg"
