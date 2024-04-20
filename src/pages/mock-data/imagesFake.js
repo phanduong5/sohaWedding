@@ -1,6 +1,6 @@
-
+// import hi from "../../assets/img/Abumle_ảnh_cươi/studioAndOutSide"
 const images1 = require.context(
-  "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_hồ",
+  "../../assets/img/Abumle_ảnh_cươi/studioAndOutSide",
   true
 );
 const images2 = require.context(
@@ -26,7 +26,7 @@ const images6 = require.context(
 
 export const imageAlbumDetail = () => {
   const imageMap1 = {
-    name: "ẢNH CHỤP HỒ",
+    name: "ẢNH STUDIO VÀ NGOẠI CẢNH",
     list: images1.keys().map((image) => images1(image)),
   };
   const imageMap2 = {
