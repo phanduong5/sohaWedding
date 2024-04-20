@@ -1,12 +1,12 @@
 import React from "react";
 import "./service.scss";
-import dvChupAnhCuoiImg from "../../assets/img/service/dich-vu-chup-anh-cuoi.webp";
-import dvThueVayCuoiImg from "../../assets/img/service/cho-thue-vay-cuoi-1.webp";
-import dvPhongSuImg from "../../assets/img/service/chup-quay-phong-su-ngay-cuoi.avif";
-import dvMakeUpImg from "../../assets/img/service/make-up-co-dau.avif";
+import dvChupAnhCuoiImg from "../../assets/img/service/PhotoWedding.jpg";
+import dvThueVayCuoiImg from "../../assets/img/service/DressWedding.jpg";
+import dvPhongSuImg from "../../assets/img/service/PhotoVideoWeddingDayHome.jpg";
+import dvMakeUpImg from "../../assets/img/service/makeup.jpg";
 import dvChupAnhGiaDinhImg from "../../assets/img/service/Dich-vu-Chup-anh-gia-dinh.avif";
 import dvThiepCuoiImg from "../../assets/img/service/dich-vu-thiep-cuoi.avif";
-import dvDaoTaoNgheImg from "../../assets/img/service/dao-tao-nghe.avif";
+import dvDaoTaoNgheImg from "../../assets/img/service/tranding.jpg";
 import { domainApp } from "../../router/router";
 import DetailConsultation from "../common/detail-consultation/DetailConsultation";
 import AlbumWending from "../common/album-wending/AlbumWending";

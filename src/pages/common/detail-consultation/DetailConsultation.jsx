@@ -1,10 +1,23 @@
 import React from "react";
-import { Button, Checkbox, Form, Input } from "antd";
+import { Button, Form, Input } from "antd";
 import "./detail-consultation.scss";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 
 const DetailConsultation = () => {
+  var expirationDate = new Date();
+  expirationDate.setDate(expirationDate.getDate() + 7);
+  var expires = expirationDate.toUTCString();
+
   const onFinish = (values) => {
+    toast("🦄 SOHA liên hệ tới bạn sớm nhất ")
+    var sdt = "Số điện thoại"
+    var day = "Ngày cưới"
     console.log("Success:", values);
+    document.cookie = "Tên=" + values.Tên + "; expires=" + expires + "; path=/";
+    document.cookie = "SDT=" + values[sdt] + "; expires=" + expires + "; path=/";
+    document.cookie = "Ngày Cưới=" + values[day] + "; expires=" + expires + "; path=/";
   };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
@@ -72,6 +85,7 @@ const DetailConsultation = () => {
               </Button>
             </Form.Item>
           </Form>
+          <ToastContainer/>
         </div>
       </div>
     </div>

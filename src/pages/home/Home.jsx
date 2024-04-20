@@ -18,8 +18,7 @@ import {
 import AlbumWending from "../common/album-wending/AlbumWending.jsx";
 import { domainApp } from "../../router/router.js";
 import DetailConsultation from "../common/detail-consultation/DetailConsultation.jsx";
-import AnhCuoiStudio from "../../assets/img/StylePhoto/Studio Photo/anhchonj.jpg"
-import AnhCuoiStudio_vespa from "../../assets/img/Abumle_ảnh_cươi/ảnh_studio_2/anhchon.jpg"
+import PhotoStudioAndOutSide from "../../assets/img/Abumle_ảnh_cươi/studioAndOutSide/PhotoChose.jpg";import AnhCuoiStudio_vespa from "../../assets/img/Abumle_ảnh_cươi/ảnh_studio_2/anhchon.jpg"
 import AnhCuoiDuongPho from "../../assets/img/StylePhoto/Studio anh vespa car photo/anhchon.jpg"
 import AnhCuoiStudioAoDai from "../../assets/img/StylePhoto/Studio and Ao Dai/Photochose.jpg"
 import AnhCuoiStudioNgoaiTroi from "../../assets/img/Abumle_ảnh_cươi/ảnh_chụp_hồ/anhchon.jpg"
@@ -58,9 +57,9 @@ const Home = () => {
   const albumAnhCuoi = [
     {
       id: 1,
-      name: "ảnh cưới studio",
+      name: "studio và ngoại cảnh",
       //src: `${domainApp}/images/service/ảnh cưới studio.avif`,
-      src: AnhCuoiStudio
+      src: PhotoStudioAndOutSide,
     },
     {
       id: 2,
