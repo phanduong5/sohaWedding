@@ -12,12 +12,7 @@ const DetailConsultation = () => {
 
   const onFinish = (values) => {
     toast("🦄 SOHA liên hệ tới bạn sớm nhất ")
-    var sdt = "Số điện thoại"
-    var day = "Ngày cưới"
     console.log("Success:", values);
-    document.cookie = "Tên=" + values.Tên + "; expires=" + expires + "; path=/";
-    document.cookie = "SDT=" + values[sdt] + "; expires=" + expires + "; path=/";
-    document.cookie = "Ngày Cưới=" + values[day] + "; expires=" + expires + "; path=/";
   };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);

@@ -8,6 +8,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import "../contact/contact.scss"
 import { Link } from "react-router-dom";
 import { ConnextFacebook } from "../common/connextInternerPublic/connext.jsx";
+import DetailConsultation from "../common/detail-consultation/DetailConsultation.jsx";
 const Contact = () => {
   return (
     <>
@@ -51,6 +52,9 @@ const Contact = () => {
             <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(Soha%20Wedding)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
           </div>
         </div>
+        <section className="service-section service-section-4">
+        <DetailConsultation />
+      </section>
         <ContextContact />
       </div>
     </>

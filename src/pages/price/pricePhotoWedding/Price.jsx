@@ -13,6 +13,7 @@ import Photo11 from "../../../assets/img/báo_giá_chụp/all in.jpg"
 import "./price.scss"
 import ServiceHome from "../../common/commonService/CommonService"
 import Contact from "../../common/commonContext/CommonContext"
+import DetailConsultation from "../../common/detail-consultation/DetailConsultation";
 const Price = () => {
   const list = [
     [Photo1, Photo2],
@@ -45,7 +46,10 @@ const Price = () => {
         </div>
       </div>
       <ServiceHome />
-          <Contact/>
+      <section className="service-section service-section-4">
+        <DetailConsultation />
+      </section>
+      <Contact />
     </div>
   </>;
 };

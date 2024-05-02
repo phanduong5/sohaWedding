@@ -12,6 +12,7 @@ import "./priceAudio.scss"
 import AlbumWending from "../../common/album-wending/AlbumWending"
 import "../../service/service.scss"
 import Contact from "../../common/commonContext/CommonContext"
+import DetailConsultation from "../../common/detail-consultation/DetailConsultation"
 const PriceAudio = () => {
     const albumAnhCuoi = [
         {
@@ -70,10 +71,10 @@ const PriceAudio = () => {
             <span>Các gói chụp phóng sự cưới đã bao gồm chụp truyền thống đầy đủ các lễ nghi, kết hợp chụp nhiều khoảnh khắc tự nhiên, ghi lại cảm xúc chân thật trong ngày trọng đại của Cô dâu Chú rể.</span>
             <div className="row">
                 <div className="col">
-                    <img className="img_priceAudio" src={Phong_su1}/>
+                    <img className="img_priceAudio" src={Phong_su1} />
                 </div>
                 <div className="col">
-                    <img className="img_priceAudio" src={Phong_su2}/>
+                    <img className="img_priceAudio" src={Phong_su2} />
                 </div>
             </div>
             <div className="AlbumWending_priceAudio">
@@ -84,7 +85,10 @@ const PriceAudio = () => {
                 hiện đại"
                 />
             </div>
-            <Contact/>
+            <section className="service-section service-section-4">
+                <DetailConsultation />
+            </section>
+            <Contact />
         </div>
     );
 };
