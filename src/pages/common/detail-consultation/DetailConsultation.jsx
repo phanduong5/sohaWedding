@@ -3,7 +3,7 @@ import { Button, Form, Input } from "antd";
 import "./detail-consultation.scss";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
+import axios from "axios";
 
 const DetailConsultation = () => {
   var expirationDate = new Date();
@@ -11,8 +11,23 @@ const DetailConsultation = () => {
   var expires = expirationDate.toUTCString();
 
   const onFinish = (values) => {
+    const data =  {
+        name : values["Tên"],
+        date : values["Ngày cưới"],
+        numberPhone : values["Số điện thoại"]
+    }
+    axios.post("https://apisoha-production.up.railway.app/sendData",JSON.stringify(data),{
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(res => {
+      console.log(res);
+    })
+    .catch(er => console.log(er))
     toast("🦄 SOHA liên hệ tới bạn sớm nhất ")
-    console.log("Success:", values);
+    console.log(typeof data);
+    console.log("Success:", data);
   };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
