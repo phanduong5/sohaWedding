@@ -33,10 +33,16 @@
     "yet-another-react-lightbox": "^3.17.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"npm run server:dev\"",
+    "start:client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "cd server && npm start",
+    "server:dev": "cd server && npm run dev",
+    "dev": "concurrently \"npm run start:client\" \"npm run server:dev\"",
+    "install:server": "cd server && npm install",
+    "build:full": "npm run build && cd server && npm install --production"
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +63,7 @@
     ]
   },
   "devDependencies": {
-    "webpack": "^5.89.0"
+    "webpack": "^5.89.0",
+    "concurrently": "^8.2.2"
   }
 }
