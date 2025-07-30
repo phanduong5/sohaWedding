@@ -3,7 +3,7 @@ import { Button, Form, Input } from "antd";
 import "./detail-consultation.scss";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import axios from "axios";
+import emailjs from '@emailjs/browser';
 
 const DetailConsultation = () => {
   var expirationDate = new Date();
@@ -11,22 +11,40 @@ const DetailConsultation = () => {
   var expires = expirationDate.toUTCString();
 
   const onFinish = (values) => {
-    const data =  {
-        name : values["Tên"],
-        date : values["Ngày cưới"],
-        numberPhone : values["Số điện thoại"]
+    const data = {
+        name: values["Tên"],
+        date: values["Ngày cưới"],
+        numberPhone: values["Số điện thoại"]
     }
-    axios.post("https://apisoha-production.up.railway.app/sendData",JSON.stringify(data),{
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(res => {
-      console.log(res);
-    })
-    .catch(er => console.log(er))
-    toast("🦄 SOHA liên hệ tới bạn sớm nhất ")
-    console.log(typeof data);
+
+    // EmailJS configuration - sử dụng environment variables
+    const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_soha_wedding';
+    const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_consultation';
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
+
+    // Template parameters for EmailJS
+    const templateParams = {
+      to_email: 'phanduong182k1@gmail.com',
+      from_name: data.name,
+      phone_number: data.numberPhone,
+      wedding_date: data.date,
+      message: `Thông tin tư vấn mới:
+      - Tên: ${data.name}
+      - Số điện thoại: ${data.numberPhone}
+      - Ngày cưới: ${data.date}`
+    };
+
+    // Send email using EmailJS
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully!', response.status, response.text);
+        toast.success("🦄 SOHA đã nhận được thông tin, sẽ liên hệ tới bạn sớm nhất!");
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+        toast.error("❌ Có lỗi xảy ra, vui lòng thử lại sau!");
+      });
+
     console.log("Success:", data);
   };
   const onFinishFailed = (errorInfo) => {
